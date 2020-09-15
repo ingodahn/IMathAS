@@ -243,3 +243,4 @@ var i18njs = {"Submit":"Absenden",
 "Submitting...":"Sende...",
 "Question Submitted":"Frage abgeschickt",
 "Has Rubric":"Hat eine Rubrik"};
+
