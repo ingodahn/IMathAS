@@ -63,7 +63,7 @@ div.blockitems div.blockitems div.blockitems {
 
 /*Second level default block container*/
 div.blockitems div.block {
-  background-color: #dfd;
+  background-color: #297bbb;
 }
 
 /*Second level default block item container */
@@ -223,24 +223,14 @@ div.ddmenu {
 
 /*colors and borders for assessments*/
 /*seq question css*/
-div.curquestion {
-}
+
 div.inactive {
   border: 1px solid #00f;
 }
 div.prequestion {
   border: 1px solid #00f;
 }
-hr.seq {
-}
-div.seqqinfocur {
-}
-div.seqqinfocur span.current {
-}
-div.seqqinfoavail {
-}
-div.seqqinfoinactive {
-}
+
 div.todoquestion {
   background-color: #ffffcc;
   border: 1px solid #999966;
@@ -405,9 +395,7 @@ div#headercontent {
   height: 65px;
   padding: 0px 10px;
 }
-div#navlistcont {
-  /*height: 24px;*/
-}
+
 div#headerbarlogo {
   /*background: transparent url(../img/otbslogo.gif) no-repeat scroll left bottom;*/
   padding-top: 10px;
