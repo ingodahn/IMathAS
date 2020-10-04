@@ -17,7 +17,10 @@
     "timewarning": "Dieser Test hat eine Zeitbegrenzung. Wenn Sie den Test starten lässt sich der Zeitablauf nicht mehr unterbrechen. Sind Sie sicher, dass Sie den Test starten sollen?",
     "resetmsg": "Dozenten: Sie können Ihre Versuche dieses Tests zurücksetzen.",
     "doreset": "Test zurücksetzen",
-    "view_as_stu": "Wie Student: {name}"
+    "view_as_stu": "Wie Student: {name}",
+    "scorelist": "Punkte-Übersicht",
+    "itemanalysis": "Fragen-Analyse",
+    "gblinks": "Links zur Notenübersicht"
   },
   "closed": {
     "hidden": "Dieser Test ist derzeit nicht verfügbar.",
@@ -195,9 +198,11 @@
   },
   "summary": {
     "no_total": "Ihr Test wurde eingereicht.",
+    "viewwork_work": "Sie können Ihre Arbeit in der Notenübersicht ansehen",
+    "viewwork_work_after": "Sie können Ihre Arbeit nach Fälligkeit des Tests in der Notenübersicht ansehen.",
     "viewwork_immediately": "Sie können Ihre Arbeit und Ihre Punkte in der Notenübersicht ansehen.",
-    "viewwork_after_take": "Sie können Ihre Arbeit und Ihre Punkte in der Notenübersicht ansehen.",
     "viewwork_after_due": "Sie können Ihre Arbeit und Ihre Punkte nach der Fälligkeit des Tests in der Notenübersicht ansehen.",
+    "viewwork_work_scores_after": "Sie können Ihre Arbeit und Ihre Punkte nach Fälligkeit des Tests in der Notenübersicht ansehen.",
     "viewwork_never": "",
     "score": "Punkte",
     "recordedscore": "Gespeicherter Punktestand",

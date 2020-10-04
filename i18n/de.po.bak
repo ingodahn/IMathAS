@@ -3,20 +3,19 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#: mathquill/mathquill.js:1530 mathquill/mathquill.min.js:1
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-12 22:03+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"POT-Creation-Date: 2020-09-15 11:49+0200\n"
+"PO-Revision-Date: 2020-09-24 20:15+0200\n"
+"Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"X-Generator: Poedit 2.3\n"
 
 #: DEembedq.php:171 OEAembedq.php:315 admin/forms.php:1252 admin/forms.php:1520
 #: assessment/showtest.php:292 assessment/showtest.php:1929
@@ -58,6 +57,7 @@ msgstr "%1$s von %2$s"
 #: assess2/questions/QuestionHtmlGenerator.php:1180 course/drillassess.php:592
 #: course/drillassess.php:596 javascript/AMhelpers2.js:322
 #: javascript/AMhelpers2.js:341
+#: assess2/questions/QuestionHtmlGenerator.php:1193
 msgid "Correct"
 msgstr "Richtig"
 
@@ -75,6 +75,7 @@ msgstr "Richtig"
 #: javascript/AMhelpers2.js:327 javascript/AMhelpers2.js:342
 #: assess2/questions/QuestionHtmlGenerator.php:1176 course/drillassess.php:594
 #: javascript/AMhelpers2.js:328 javascript/AMhelpers2.js:343
+#: assess2/questions/QuestionHtmlGenerator.php:1189
 msgid "Incorrect"
 msgstr "Falsch"
 
@@ -92,6 +93,7 @@ msgstr "Falsch"
 #: javascript/AMhelpers2.js:324 javascript/AMhelpers2.js:341
 #: assess2/questions/QuestionHtmlGenerator.php:1188 course/drillassess.php:598
 #: javascript/AMhelpers2.js:325 javascript/AMhelpers2.js:342
+#: assess2/questions/QuestionHtmlGenerator.php:1201
 msgid "Partially correct"
 msgstr "Teilweise richtig"
 
@@ -988,7 +990,7 @@ msgstr "Name"
 #: admin/userreports.php:157 admin/userreports.php:223 course/gradebook.php:712
 #: forms.php:425 course/gradebook.php:716 course/listusers.php:753
 #: admin/admin2.php:293 course/gradebook.php:720 forms.php:483
-#: course/listusers.php:761
+#: course/listusers.php:761 course/listusers.php:758
 msgid "Email"
 msgstr "E-Mail"
 
@@ -1884,6 +1886,7 @@ msgstr "Alle"
 #: course/addquestions.php:1290 course/addquestions.php:1373
 #: course/addquestions.php:1499 course/addquestions.php:1563
 #: course/chgassessments2form.php:454 course/listusers.php:715
+#: course/listusers.php:712
 msgid "None"
 msgstr "Keine"
 
@@ -2403,6 +2406,8 @@ msgstr "Antworten können variieren"
 #: assess2/questions/QuestionHtmlGenerator.php:864
 #: assess2/questions/QuestionHtmlGenerator.php:871
 #: assess2/questions/QuestionHtmlGenerator.php:889
+#: assess2/questions/QuestionHtmlGenerator.php:884
+#: assess2/questions/QuestionHtmlGenerator.php:902
 msgid "Hint:"
 msgstr "Hinweis:"
 
@@ -2417,6 +2422,9 @@ msgstr "Hinweis:"
 #: assess2/questions/QuestionHtmlGenerator.php:983
 #: assess2/questions/QuestionHtmlGenerator.php:1004
 #: assess2/questions/QuestionHtmlGenerator.php:1012
+#: assess2/questions/QuestionHtmlGenerator.php:996
+#: assess2/questions/QuestionHtmlGenerator.php:1017
+#: assess2/questions/QuestionHtmlGenerator.php:1025
 msgid "Answer:"
 msgstr "Antwort:"
 
@@ -2431,6 +2439,9 @@ msgstr "Antwort:"
 #: assess2/questions/QuestionHtmlGenerator.php:985
 #: assess2/questions/QuestionHtmlGenerator.php:1006
 #: assess2/questions/QuestionHtmlGenerator.php:1014
+#: assess2/questions/QuestionHtmlGenerator.php:998
+#: assess2/questions/QuestionHtmlGenerator.php:1019
+#: assess2/questions/QuestionHtmlGenerator.php:1027
 msgid "Show Answer"
 msgstr "Antwort anzeigen"
 
@@ -2442,6 +2453,8 @@ msgstr "Antwort anzeigen"
 #: assess2/questions/QuestionHtmlGenerator.php:1099
 #: javascript/assess2supp.js:199
 #: assess2/questions/QuestionHtmlGenerator.php:1124
+#: assess2/questions/QuestionHtmlGenerator.php:1137
+#: javascript/assess2supp.js:201
 msgid "Written Example"
 msgstr "Musterlösung"
 
@@ -2455,6 +2468,7 @@ msgstr "Musterlösung"
 #: assess2/questions/QuestionHtmlGenerator.php:630
 #: assess2/questions/QuestionHtmlGenerator.php:656
 #: assess2/questions/QuestionHtmlGenerator.php:681
+#: assess2/questions/QuestionHtmlGenerator.php:694
 msgid "Question"
 msgstr "Frage"
 
@@ -2462,6 +2476,7 @@ msgstr "Frage"
 #: assess2/questions/QuestionHtmlGenerator.php:1072 assess2/displayq3.php:454
 #: assess2/questions/QuestionHtmlGenerator.php:1101
 #: assess2/questions/QuestionHtmlGenerator.php:1126
+#: assess2/questions/QuestionHtmlGenerator.php:1139
 msgid "This solution is for a similar problem, not your specific version"
 msgstr ""
 "Diese Lösung ist für ein ähnliches Problem, nicht für diese spezielle Version"
@@ -2483,12 +2498,14 @@ msgstr "Antwort"
 #: assess2/displayq3.php:524 assess2/questions/QuestionHtmlGenerator.php:673
 #: assess2/questions/QuestionHtmlGenerator.php:699 course/addquestions.php:964
 #: assess2/questions/QuestionHtmlGenerator.php:724 course/addquestions.php:972
+#: assess2/questions/QuestionHtmlGenerator.php:737
 msgid "Detailed Solution"
 msgstr "Detaillierte Lösung"
 
 #: assessment/displayq2.php:676 assess2/questions/QuestionHtmlGenerator.php:675
 #: assess2/displayq3.php:526 assess2/questions/QuestionHtmlGenerator.php:701
 #: assess2/questions/QuestionHtmlGenerator.php:726
+#: assess2/questions/QuestionHtmlGenerator.php:739
 msgid "Show Detailed Solution"
 msgstr "Zeige detaillierte Lösung an"
 
@@ -4052,6 +4069,7 @@ msgstr "Trigonometrische Funktionen (sin, cos, etc.) sind nicht erlaubt"
 #: assess2/questions/QuestionHtmlGenerator.php:1159
 #: assessment/displayq2.php:8120
 #: assess2/questions/QuestionHtmlGenerator.php:1184
+#: assess2/questions/QuestionHtmlGenerator.php:1197
 msgid "Correct answer, but wrong format"
 msgstr "Richtige Antwort, aber falsches Format"
 
@@ -4684,7 +4702,8 @@ msgstr "verbleibend"
 #: course/addassessment2form.php:501 course/chgassessments2form.php:114
 #: course/chgassessments2form.php:503 course/gbsettings.php:321
 #: course/addassessment2form.php:503 course/chgassessments2form.php:505
-#: course/listusers.php:720 course/listusers.php:724
+#: course/listusers.php:720 course/listusers.php:724 course/listusers.php:717
+#: course/listusers.php:721
 msgid "Hide"
 msgstr "Verstecken"
 
@@ -5696,7 +5715,10 @@ msgstr ""
 
 #: bltilaunch.php:1292 bltilaunch.php:2520 bltilaunch.php:2522
 msgid "This placement is not yet set up"
-msgstr "Dieser Test ist noch nicht eingerichtet"
+msgstr ""
+"Dieser Test ist noch nicht eingerichtet. Dazu muss der Test als Dozent "
+"aufgerufen werden (in Open OLAT: Als Besitzer oder Betreuer des Kurses; die "
+"Vorschau des Bausteins erfolgt sonst nur als Teilnehmer)"
 
 #: bltilaunch.php:1307 bltilaunch.php:2529 bltilaunch.php:2531
 msgid "Invalid placement type"
@@ -5873,7 +5895,8 @@ msgstr "Einführung/Anleitungen (Bei Start des Tests)"
 #: javascript/posts.js:62 course/addassessment2form.php:501
 #: course/chgassessments2form.php:503 course/gbsettings.php:321
 #: course/addassessment2form.php:503 course/chgassessments2form.php:505
-#: course/listusers.php:719 course/listusers.php:723
+#: course/listusers.php:719 course/listusers.php:723 course/listusers.php:716
+#: course/listusers.php:720
 msgid "Show"
 msgstr "Anzeigen"
 
@@ -7117,7 +7140,7 @@ msgstr "Bibliothek"
 #: assess2/questions/models/Question.php:164 course/addquestions.php:957
 #: course/moddataset.php:1230 javascript/assess2supp.js:195
 #: course/addquestions.php:965 javascript/addqsort.js:1421
-#: javascript/addqsort.js:1428
+#: javascript/addqsort.js:1428 javascript/assess2supp.js:196
 msgid "Video"
 msgstr "Video"
 
@@ -9808,12 +9831,12 @@ msgid "Pics"
 msgstr "Bilder"
 
 #: course/gradebook.php:456 course/listusers.php:708 course/gradebook.php:460
-#: course/listusers.php:716
+#: course/listusers.php:716 course/listusers.php:713
 msgid "Small"
 msgstr "Klein"
 
 #: course/gradebook.php:457 course/listusers.php:709 course/gradebook.php:461
-#: course/listusers.php:717
+#: course/listusers.php:717 course/listusers.php:714
 msgid "Big"
 msgstr "Groß"
 
@@ -9914,11 +9937,13 @@ msgstr "Info ändern"
 
 #: course/gradebook.php:724 course/gradebook.php:730 course/listusers.php:485
 #: course/gradebook.php:728 course/gradebook.php:734 course/listusers.php:491
+#: course/listusers.php:488
 msgid "Login Log"
 msgstr "Login-Protokoll"
 
 #: course/gradebook.php:725 course/gradebook.php:731 course/listusers.php:486
 #: course/gradebook.php:729 course/gradebook.php:735 course/listusers.php:492
+#: course/listusers.php:489
 msgid "Activity Log"
 msgstr "Aktivitäts-Log"
 
@@ -10146,19 +10171,19 @@ msgstr "Wurzel für private Bibliotheken"
 msgid "Root Level Group Libraries"
 msgstr "Wurzel für Gruppenbibliotheken"
 
-#: course/listusers.php:479 course/listusers.php:485
+#: course/listusers.php:479 course/listusers.php:485 course/listusers.php:482
 msgid "Student profile and options"
 msgstr "Studenten-Profil und Optionen"
 
-#: course/listusers.php:481 course/listusers.php:487
+#: course/listusers.php:481 course/listusers.php:487 course/listusers.php:484
 msgid "Unlock"
 msgstr "Entsperren"
 
-#: course/listusers.php:483 course/listusers.php:489
+#: course/listusers.php:483 course/listusers.php:489 course/listusers.php:486
 msgid "Lock out of course"
 msgstr "Aus dem Kurs ausschließen"
 
-#: course/listusers.php:778 course/listusers.php:786
+#: course/listusers.php:778 course/listusers.php:786 course/listusers.php:783
 msgid "Has a time limit multiplier set"
 msgstr "Hat einen Faktor für das Zeit-Limit gesetzt"
 
@@ -10654,7 +10679,7 @@ msgstr "Hilfe-Schaltfläche: Typ:"
 
 #: course/moddataset.php:1227 javascript/assess2supp.js:47
 #: assess2/questions/models/Question.php:166 course/moddataset.php:1231
-#: javascript/assess2supp.js:197
+#: javascript/assess2supp.js:197 javascript/assess2supp.js:199
 msgid "Read"
 msgstr "Lesen"
 
@@ -14272,12 +14297,14 @@ msgstr "Fehler beim Erzeugen dieser Frage: "
 #: assess2/questions/QuestionHtmlGenerator.php:531
 #: assess2/questions/QuestionHtmlGenerator.php:557
 #: assess2/questions/QuestionHtmlGenerator.php:582
+#: assess2/questions/QuestionHtmlGenerator.php:595
 msgid "Caught error while evaluating the text in this question: "
 msgstr "Fehler im Text dieser Frage: "
 
 #: assess2/questions/QuestionHtmlGenerator.php:604
 #: assess2/questions/QuestionHtmlGenerator.php:630
 #: assess2/questions/QuestionHtmlGenerator.php:655
+#: assess2/questions/QuestionHtmlGenerator.php:668
 #, php-format
 msgid "Part %d/%d"
 msgstr "Teil %d/%d"
