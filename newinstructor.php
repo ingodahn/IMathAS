@@ -24,6 +24,10 @@ $placeinhead .= '<script type="text/javascript" src="'.$imasroot.'/javascript/jq
 
 		$error .= checkNewUserValidation($extrarequired);
 
+		if (isset($_POST['email2'])) {
+			$error .= "<p>Data found!</p>";
+		}
+
 		if ($error != '') {
 			echo $error;
 		} else {
@@ -103,6 +107,8 @@ $placeinhead .= '<script type="text/javascript" src="'.$imasroot.'/javascript/jq
 	echo "<span class=form>Vorname</span><span class=formright><input type=text id=firstname name=firstname value=\"$firstname\" size=40></span><br class=form />\n";
 	echo "<span class=form>Nachname</span><span class=formright><input type=text id=lastname name=lastname value=\"$lastname\" size=40></span><br class=form />\n";
 	echo "<span class=form>Email-Addresse</span><span class=formright><input type=text id=email name=email value=\"$email\" size=40></span><br class=form />\n";
+	/* Empty field for spam prevention */
+	echo "<span id='mail2' class=form>2. Email-Addresse</span><span class=formright><input type=text id=email2 name=email2 value=\"\" size=40></span><br class=form />\n";
 	echo "<span class=form>Telefonnr.</span><span class=formright><input type=text id=phone name=phone value=\"$phone\" size=40></span><br class=form />\n";
 	echo "<span class=form>Hochschule</span><span class=formright><input type=text id=school name=school value=\"$school\" size=40></span><br class=form />\n";
 	echo "<span class=form>Gewünschter Benutzername</span><span class=formright><input type=text id=SID name=SID value=\"$username\" size=40></span><br class=form />\n";
@@ -111,6 +117,8 @@ $placeinhead .= '<script type="text/javascript" src="'.$imasroot.'/javascript/jq
 	echo "<span class=form>Die <a href='https://netmath.vcrp.de/downloads/Systeme/NutzungsbedingungenIMathAS.html' target='_blank'>Nutzungsbedingungen</a> und die <a href='https://netmath.vcrp.de/downloads/Systeme/privacyIMathAS.html' target='_blank'>Datenschutzerklärung</a> habe ich gelesen und stimme ihnen zu.</span><span class=formright><input type=checkbox id=agree name=agree></span><br class=form />\n";
 	echo "<div class=submit><input type=submit value=\"Kennung beantragen\"></div>\n";
 	echo "</form>\n";
+	/* Hiding spam prevention field */
+	echo "<script>$('#mail2,#email2').hide();</script>";
 	showNewUserValidation('newinstrform',$extrarequired);
 	require("footer.php");
 ?>
