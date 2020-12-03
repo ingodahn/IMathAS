@@ -81,7 +81,10 @@
     "timelimit_extend": "Erweitert gegenüber der ursprünglichen Zeit von {time}.",
     "timelimit_restricted": "Abgabe bald fällig. Die Zeit läuft ab bei Fälligkeit, {due}.",
     "timelimit_wgrace_restricted": "Zeitbegrenzung: {time}, mit einer Kulanzzeit bis {due}. Bei Nutzung der Kulanzzeit gibt es einen Punktabzug von {penalty}%.",
-    "excused": "Sie können diesen Test überspringen. Dies ändert nichts an Ihrer Note."
+    "timelimit_ext": "Sie erhielten eine Verlängerung um {n} Minuten",
+    "timelimit_ext_used": "Sie haben eine Verlängerung um {n} Minuten genutzt",
+    "excused": "Sie können diesen Test überspringen. Dies ändert nichts an Ihrer Note.",
+    "latepass_needed": "Sie können ein Kulanzguthaben nutzen um die Fälligkeit bis zum {date} zu verlängern | Sie können {n} Kulanzguthaben nutzen um die Fälligkeit bis zum {date} zu verlängern"
   },
   "group": {
     "isgroup": "Dies ist ein Gruppentest.",
@@ -375,6 +378,7 @@
     "keep_avg": "Die Note wird aufgrund des Mittels aller Test-Versuche berechnet",
     "keep_last": "Die Note wird aufgrund des letzten Test-Versuchs berechnet",
     "full_credit_parts": "Volle Punkte für alle Teile",
+    "full_manual_parts": "Volle Punktzahl für alle manuell zu bewertenden Teile",
     "full_credit": "Volle Punktzahl",
     "add_feedback": "Rückmeldung hinzufügen",
     "feedback": "Rückmeldung",
@@ -395,12 +399,14 @@
     "overridden": "Vom Dozenten korrigiert",
     "view_as_stu": "Als Student ansehen",
     "print": "Druckversion",
+    "filters": "Volle Punktzahl für alle manuell zu bewertenden Teile",
+    "hide": "Filter und Optionen",
     "hide_perfect": "Fragen mit voller Punktzahl ausblenden",
-    "hide_correct": "Richtig beantwortete Fragen ausblenden",
+    "hide_nonzero": "0 < Punktzahl < 100%",
+    "hide_zero": "Punkte = 0",
+    "hide_fb": "Fragen mit Rückmeldung",
+    "hide_nowork": "Fragen ohne Lösungsweg",
     "hide_unans": "Unbeantwortete Fragen ausblenden",
-    "show_perfect": "Fragen mit voller Punktzahl einblenden",
-    "show_correct": "Richtig beantwortete Fragen einblenden",
-    "show_unans": "Unbeantwortete Fragen einblenden",
     "quick_grade": "Schnell-Bewertung",
     "saving": "Speichere...",
     "saved": "Gespeichert",
@@ -426,6 +432,7 @@
     "autosave_byassess": "Automatisch gespeicherte Ergebnisse werden nach Einreichen des Tests bewertet.",
     "view_edit": "Frage ansehen/bearbeiten",
     "show_all_ans": "Alle Antworten anzeigen",
+    "show_all_work": "Alle Lösungswege anzeigen",
     "no_versions": "Noch keine Test-Versuche anzuzeigen",
     "minutes": "Minuten",
     "avail_never": "Die Noten sind zurzeit vom Dozenten nicht freigegeben.",
@@ -439,7 +446,10 @@
     "hide_excused": "Tests, die Sie nicht bearbeiten müssen, ausblenden",
     "excused_list": "Aufgrund der bisherigen Ergebnisse in diesem Test müssen Sie die folgenden Tests nicht bearbeiten:",
     "show_endmsg": "Endnachricht anzeigen",
-    "hide_endmsg": "Endnachricht ausblenden"
+    "hide_endmsg": "Endnachricht ausblenden",
+    "has_timeext": "Hat eine Verlängerung um {n} Minuten",
+    "used_timeext": "Hat eine Verlängerung um {n} Minuten genutzt",
+    "attemptext": "Ausnahme für {n} zusätzliche Versionen genehmigt"
   },
   "work": {
     "add": "Lösung hinzufügen",
