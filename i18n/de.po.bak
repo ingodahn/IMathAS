@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-27 09:58+0100\n"
-"PO-Revision-Date: 2021-01-27 10:02+0100\n"
+"POT-Creation-Date: 2021-02-12 09:49+0100\n"
+"PO-Revision-Date: 2021-02-12 09:52+0100\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -468,7 +468,7 @@ msgstr "Hier ist eine Liste aller Benutzernamen mit dieser Email-Adresse"
 #: course/addassessment2form.php:869 course/addassessment2form.php:908
 #: course/addassessment2form.php:956 course/chgassessments2form.php:811
 #: course/chgassessments2form.php:877 course/chgassessments2form.php:919
-#: course/chgassessments2form.php:971
+#: course/chgassessments2form.php:971 course/gbtable2.php:967
 msgid "Never"
 msgstr "Niemals"
 
@@ -966,6 +966,7 @@ msgstr "Fortfahren"
 #: course/addassessment2.php:781 javascript/addqsort2.js:1094
 #: course/addassessment2.php:792 course/chgassessments2.php:552
 #: course/gradebook.php:351 course/gradebook.php:519
+#: course/addassessment2.php:794
 msgid "Default"
 msgstr "Standard"
 
@@ -1210,7 +1211,7 @@ msgstr "Bearbeiten"
 #: course/courseshowitems.php:2363 course/courseshowitems.php:2410
 #: course/courseshowitems.php:2457 lti/admin/platforms.php:104
 #: lti/admin/platforms.php:116 lti/admin/privkeys.php:64
-#: util/finddupacctreq.php:75
+#: util/finddupacctreq.php:75 course/editsnippets.php:260
 msgid "Delete"
 msgstr "Löschen"
 
@@ -2348,6 +2349,8 @@ msgstr ""
 #: course/course.php:718 course/exception.php:224 course/gbsettings.php:409
 #: course/gradebook.php:774 course/gradebook.php:1342 course/latepasses.php:177
 #: course/managecalitems.php:164 course/managecalitems.php:193
+#: course/addassessment2.php:610 course/addforum.php:316 course/addwiki.php:167
+#: course/editsnippets.php:243 course/editsnippets.php:271
 msgid "Save Changes"
 msgstr "Änderungen speichern"
 
@@ -2775,6 +2778,7 @@ msgstr "Musterlösung"
 #: assess2/questions/QuestionHtmlGenerator.php:714
 #: assess2/questions/QuestionHtmlGenerator.php:719
 #: assess2/questions/QuestionHtmlGenerator.php:718
+#: assess2/questions/QuestionHtmlGenerator.php:717
 msgid "Question"
 msgstr "Frage"
 
@@ -2788,6 +2792,7 @@ msgstr "Frage"
 #: assess2/questions/QuestionHtmlGenerator.php:1209
 #: assess2/questions/QuestionHtmlGenerator.php:761
 #: assess2/questions/QuestionHtmlGenerator.php:1208
+#: assess2/questions/QuestionHtmlGenerator.php:760
 msgid "This solution is for a similar problem, not your specific version"
 msgstr ""
 "Diese Lösung ist für ein ähnliches Problem, nicht für diese spezielle Version"
@@ -2813,7 +2818,7 @@ msgstr "Antwort"
 #: assess2/questions/QuestionHtmlGenerator.php:757 course/addquestions2.php:702
 #: assess2/questions/QuestionHtmlGenerator.php:765 course/addquestions.php:982
 #: course/addquestions2.php:720 assess2/questions/QuestionHtmlGenerator.php:764
-#: course/addquestions2.php:721
+#: course/addquestions2.php:721 assess2/questions/QuestionHtmlGenerator.php:763
 msgid "Detailed Solution"
 msgstr "Detaillierte Lösung"
 
@@ -4085,7 +4090,7 @@ msgstr "Fehler beim Hochladen der Datei"
 #: javascript/AMhelpers2.js:1660 assess2/questions/answerboxhelpers.php:141
 #: assess2/questions/scorepart/ComplexScorePart.php:264
 #: assessment/displayq2.php:7811 javascript/AMhelpers2.js:1663
-#: javascript/AMhelpers2.js:1671
+#: javascript/AMhelpers2.js:1671 javascript/AMhelpers2.js:1672
 msgid "error - more than 1 i in expression"
 msgstr "Fehler - mehr als ein i im Ausdruck"
 
@@ -4139,7 +4144,9 @@ msgstr "Fehler - mehr als ein i im Ausdruck"
 #: assessment/displayq2.php:7873 javascript/AMhelpers2.js:1684
 #: javascript/AMhelpers2.js:1700 javascript/AMhelpers2.js:1711
 #: javascript/AMhelpers2.js:1722 javascript/AMhelpers2.js:1692
-#: javascript/AMhelpers2.js:1730
+#: javascript/AMhelpers2.js:1730 javascript/AMhelpers2.js:1693
+#: javascript/AMhelpers2.js:1709 javascript/AMhelpers2.js:1720
+#: javascript/AMhelpers2.js:1731
 msgid "error - invalid form"
 msgstr "Fehler - ungültige Form"
 
@@ -4693,7 +4700,7 @@ msgstr "Prozent"
 
 #: assessment/libs/stats.php:2059 assessment/libs/stats.php:2096
 #: assessment/libs/stats.php:2103 assessment/libs/stats.php:2308
-#: assessment/libs/stats.php:2309
+#: assessment/libs/stats.php:2309 assessment/libs/stats.php:2313
 msgid "Download CSV"
 msgstr "CSV herunterladen"
 
@@ -4715,42 +4722,42 @@ msgstr "Angezeigter Text, Farbe %s, bei %s gelesen: %s"
 #: assessment/macros.php:2272 assessment/macros.php:2295
 #: assessment/macros.php:2304 assessment/macros.php:2420
 #: assessment/macros.php:2423 assessment/macros.php:2435
-#: assessment/macros.php:2440
+#: assessment/macros.php:2440 assessment/macros.php:2442
 msgid "he"
 msgstr "er"
 
 #: assessment/macros.php:2272 assessment/macros.php:2295
 #: assessment/macros.php:2304 assessment/macros.php:2420
 #: assessment/macros.php:2423 assessment/macros.php:2435
-#: assessment/macros.php:2440
+#: assessment/macros.php:2440 assessment/macros.php:2442
 msgid "him"
 msgstr "ihm"
 
 #: assessment/macros.php:2272 assessment/macros.php:2295
 #: assessment/macros.php:2304 assessment/macros.php:2420
 #: assessment/macros.php:2423 assessment/macros.php:2435
-#: assessment/macros.php:2440
+#: assessment/macros.php:2440 assessment/macros.php:2442
 msgid "his"
 msgstr "sein"
 
 #: assessment/macros.php:2274 assessment/macros.php:2297
 #: assessment/macros.php:2306 assessment/macros.php:2422
 #: assessment/macros.php:2425 assessment/macros.php:2437
-#: assessment/macros.php:2442
+#: assessment/macros.php:2442 assessment/macros.php:2444
 msgid "she"
 msgstr "sie"
 
 #: assessment/macros.php:2274 assessment/macros.php:2297
 #: assessment/macros.php:2306 assessment/macros.php:2422
 #: assessment/macros.php:2425 assessment/macros.php:2437
-#: assessment/macros.php:2442
+#: assessment/macros.php:2442 assessment/macros.php:2444
 msgid "her"
 msgstr "ihr(e)"
 
 #: assessment/macros.php:2274 assessment/macros.php:2297
 #: assessment/macros.php:2306 assessment/macros.php:2422
 #: assessment/macros.php:2425 assessment/macros.php:2437
-#: assessment/macros.php:2442
+#: assessment/macros.php:2442 assessment/macros.php:2444
 msgid "hers"
 msgstr "ihre"
 
@@ -4758,6 +4765,7 @@ msgstr "ihre"
 #: assessment/macros.php:3428 assessment/macros.php:3558
 #: assessment/macros.php:3569 assessment/macros.php:3582
 #: assessment/macros.php:3649 assessment/macros.php:3664
+#: assessment/macros.php:3666
 msgid "No answer selected. Try again."
 msgstr "Keine Antwort ausgewählt. Bitte erneut versuchen."
 
@@ -4765,6 +4773,7 @@ msgstr "Keine Antwort ausgewählt. Bitte erneut versuchen."
 #: assessment/macros.php:3466 assessment/macros.php:3596
 #: assessment/macros.php:3607 assessment/macros.php:3624
 #: assessment/macros.php:3691 assessment/macros.php:3706
+#: assessment/macros.php:3708
 msgid "This answer does not appear to be a valid number."
 msgstr "Diese Antwort scheint keine gültige Zahl zu sein."
 
@@ -6351,7 +6360,8 @@ msgstr "Unbenannter Test"
 #: course/chgassessments.php:1052 course/chgassessments.php:1065
 #: course/addassessment2.php:592 course/addassessment2.php:647
 #: course/addassessment2.php:603 course/addassessment2.php:658
-#: course/chgassessments.php:1068
+#: course/chgassessments.php:1068 course/addassessment2.php:605
+#: course/addassessment2.php:660
 msgid ""
 "This assessment contains items that are not automatically graded.  Your "
 "grade may be inaccurate until your instructor grades these items."
@@ -6361,6 +6371,7 @@ msgstr ""
 
 #: course/addassessment.php:651 course/addassessment2.php:673
 #: course/addassessment2.php:658 course/addassessment2.php:669
+#: course/addassessment2.php:671
 msgid "Create Assessment"
 msgstr "Test anlegen"
 
@@ -6368,7 +6379,7 @@ msgstr "Test anlegen"
 #: course/addquestions.php:515 course/addquestions.php:516
 #: course/addassessment2.php:665 includes/addquestions2util.php:39
 #: course/addassessment2.php:676 course/addquestions.php:526
-#: includes/addquestions2util.php:40
+#: includes/addquestions2util.php:40 course/addassessment2.php:678
 #, php-format
 msgid ""
 "It appears this assessment is using an older [Q #] or [QUESTION #] tag. You "
@@ -6380,7 +6391,7 @@ msgstr ""
 #: course/addassessment.php:944 course/addassessment2.php:902
 #: course/addassessment.php:962 course/addassessment.php:963
 #: course/addassessment2.php:903 course/addassessment2.php:888
-#: course/addassessment2.php:899
+#: course/addassessment2.php:899 course/addassessment2.php:901
 #, php-format
 msgid "This will discard any changes you have made on this page"
 msgstr "Dies wird alle Änderungen auf dieser Seite verwerfen"
@@ -6404,7 +6415,7 @@ msgstr "Dies wird alle Änderungen auf dieser Seite verwerfen"
 #: course/addquestions.php:25 course/addquestions.php:1222
 #: course/addquestions2.php:493 course/categorize.php:103
 #: course/gb-rescoreq2.php:55 course/addquestions2.php:494
-#: course/modquestiongrid2.php:198
+#: course/modquestiongrid2.php:198 course/addassessment2.php:902
 #, php-format
 msgid "Add/Remove Questions"
 msgstr "Fragen hinzufügen/entfernen"
@@ -6446,6 +6457,7 @@ msgstr "Prozent"
 
 #: course/addassessment2.php:769 course/convertintro.php:57
 #: course/addassessment2.php:754 course/addassessment2.php:765
+#: course/addassessment2.php:767
 msgid "Modify Assessment"
 msgstr "Test ändern"
 
@@ -6453,12 +6465,12 @@ msgstr "Test ändern"
 #: course/courseshowitems.php:1915 course/courseshowitems.php:1926
 #: course/courseshowitems.php:1928 course/addassessment2.php:756
 #: course/addassessment2.php:767 course/courseshowitems.php:1927
-#: course/courseshowitems.php:1929
+#: course/courseshowitems.php:1929 course/addassessment2.php:769
 msgid "Add Assessment"
 msgstr "Test"
 
 #: course/addassessment2.php:855 course/addassessment2.php:840
-#: course/addassessment2.php:851
+#: course/addassessment2.php:851 course/addassessment2.php:853
 msgid "Create new set of groups"
 msgstr "Neue Gruppen hinzufügen"
 
@@ -6606,6 +6618,7 @@ msgstr "Text für Ende des Tests"
 #: course/course.php:628 forums/posts.php:467 javascript/addqsort.js:1707
 #: javascript/addqsort2.js:1698 course/course.php:630
 #: course/addassessment2form.php:211 course/chgassessments2form.php:185
+#: course/editsnippets.php:242
 msgid "Expand All"
 msgstr "Alle ausklappen"
 
@@ -6615,6 +6628,7 @@ msgstr "Alle ausklappen"
 #: course/course.php:629 forums/posts.php:468 javascript/addqsort.js:1711
 #: javascript/addqsort2.js:1702 course/course.php:631
 #: course/addassessment2form.php:212 course/chgassessments2form.php:186
+#: course/editsnippets.php:241
 msgid "Collapse All"
 msgstr "Alle einklappen"
 
@@ -7564,7 +7578,7 @@ msgstr "Blende vor dem Start-Datum aus und zeige ausgegraut nach dem End-Datum"
 msgid "Show greyed out before and after"
 msgstr "Zeige vor dem Start- und nach dem End-Datum ausgegraut"
 
-#: course/addforum.php:341 course/addforum.php:348
+#: course/addforum.php:341 course/addforum.php:348 course/addforum.php:350
 msgid "Create Forum"
 msgstr "Forum anlegen"
 
@@ -8330,6 +8344,7 @@ msgstr "Vorschau für Ausgewählte"
 #: javascript/qsearch.js:178 course/addquestions.php:1393
 #: course/addquestions.php:1520 course/categorize.php:207
 #: javascript/qsearch.js:207 course/modquestiongrid2.php:315
+#: forums/posthandler.php:527
 msgid "Description"
 msgstr "Beschreibung"
 
@@ -8648,13 +8663,13 @@ msgstr "Link in der Navigation anzeigen?"
 msgid "Remainder of video segment title (if any):"
 msgstr "Titel für Restvideo (falls vorhanden):"
 
-#: course/addwiki.php:172 course/addwiki.php:177
+#: course/addwiki.php:172 course/addwiki.php:177 course/addwiki.php:178
 msgid "Create Wiki"
 msgstr "Neues Wiki"
 
 #: course/addwiki.php:247 wikis/viewwiki.php:268 wikis/viewwiki.php:278
 #: wikis/viewwiki.php:290 course/addwiki.php:259 wikis/viewwiki.php:272
-#: wikis/viewwiki.php:282 wikis/viewwiki.php:294
+#: wikis/viewwiki.php:282 wikis/viewwiki.php:294 course/addwiki.php:260
 msgid "Yes, I'm Sure"
 msgstr "Ja, ich bin sicher"
 
@@ -9612,7 +9627,7 @@ msgstr "Lade Inhalt..."
 #: course/courseshowitems.php:1243 course/courseshowitems.php:1373
 #: course/courseshowitems.php:1500 course/courseshowitems.php:1659
 #: course/courseshowitems.php:1812 course/courseshowitems.php:2090
-#: course/gbsettings.php:248
+#: course/gbsettings.php:248 forums/forums.php:562
 msgid "Hidden"
 msgstr "Versteckt"
 
@@ -10289,26 +10304,30 @@ msgid "Snippets saved"
 msgstr "Fragment gespeichert"
 
 #: course/editsnippets.php:90 course/editsnippets.php:241
+#: course/editsnippets.php:257
 msgid "Snippet Title"
 msgstr "Fragment-Titel"
 
 #: course/editsnippets.php:112 course/editsnippets.php:233
+#: course/editsnippets.php:249
 msgid "Group Title"
 msgstr "Gruppen-Titel"
 
 #: course/editsnippets.php:121 course/editsnippets.php:236
+#: course/editsnippets.php:252
 msgid "Add Snippet"
 msgstr "Textfragment hinzufügen"
 
-#: course/editsnippets.php:145
+#: course/editsnippets.php:145 course/editsnippets.php:154
 msgid "Are you SURE you want to delete this snippet?"
 msgstr "Sind Sie SICHER, dass Sie dieses Fragment löschen wollen?"
 
 #: course/editsnippets.php:223 course/editsnippets.php:225
+#: course/editsnippets.php:236 course/editsnippets.php:238
 msgid "Prewritten Snippets"
 msgstr "Vorgefertigte Fragmente"
 
-#: course/editsnippets.php:254
+#: course/editsnippets.php:254 course/editsnippets.php:270
 msgid "Add Group"
 msgstr "Gruppe hinzufügen"
 
@@ -10428,7 +10447,7 @@ msgstr "Keine verspäteten Eineichungen"
 #: course/gradebook.php:1270 course/gradebook.php:1353
 #: course/gradebook.php:1355 course/gb-export.php:203 course/gb-export.php:211
 #: course/gradebook.php:1277 course/gradebook.php:1360
-#: course/gradebook.php:1362
+#: course/gradebook.php:1362 course/gb-export.php:205 course/gb-export.php:213
 msgid "Total"
 msgstr "Gesamtpunktzahl"
 
@@ -10442,12 +10461,13 @@ msgstr "Gesamtpunktzahl"
 #: course/gb-export.php:207 course/gb-export.php:238 course/gb-export.php:489
 #: course/gradebook.php:1088 course/gradebook.php:1090
 #: course/gradebook.php:1360 course/gradebook.php:1391
-#: course/gradebook.php:1633 course/gradebook.php:1635
+#: course/gradebook.php:1633 course/gradebook.php:1635 course/gb-export.php:209
+#: course/gb-export.php:240 course/gb-export.php:491
 msgid "pts"
 msgstr "Pkt"
 
 #: course/gb-export.php:215 course/gradebook.php:1356 course/gradebook.php:1360
-#: course/gb-export.php:218 course/gradebook.php:1367
+#: course/gb-export.php:218 course/gradebook.php:1367 course/gb-export.php:220
 msgid "Weighted Total %"
 msgstr "Gewichtete Gesamtpunktzahl %"
 
@@ -10460,7 +10480,8 @@ msgstr "Gewichtete Gesamtpunktzahl %"
 #: course/gradebook.php:1894 course/gb-export.php:276 course/gb-export.php:332
 #: course/gradebook.php:1421 course/gradebook.php:1479
 #: course/gradebook.php:1763 course/gradebook.php:1834
-#: course/gradebook.php:1876 course/gradebook.php:1901
+#: course/gradebook.php:1876 course/gradebook.php:1901 course/gb-export.php:278
+#: course/gb-export.php:334
 msgid "5-number summary:"
 msgstr "5-Zahlen-Statistik:"
 
@@ -10689,30 +10710,33 @@ msgstr "Oben"
 
 #: course/gbtable2.php:2401 course/showfeedback.php:76 course/gbtable2.php:2403
 #: course/gbtable2.php:2480 course/gbtable2.php:2485 course/gbtable2.php:2489
+#: course/gbtable2.php:2493
 #, php-format
 msgid "Feedback on Version %d:"
 msgstr "Rückmeldung zu Version %d:"
 
 #: course/gbtable2.php:2407 course/showfeedback.php:48
 #: course/showfeedback.php:82 course/gbtable2.php:2409 course/gbtable2.php:2486
-#: course/gbtable2.php:2491 course/gbtable2.php:2495
+#: course/gbtable2.php:2491 course/gbtable2.php:2495 course/gbtable2.php:2499
 #, php-format
 msgid "Feedback on Question %d:"
 msgstr "Rückmeldung zu Frage %d:"
 
 #: course/gbtable2.php:2413 course/showfeedback.php:90 course/gbtable2.php:2415
 #: course/gbtable2.php:2492 course/gbtable2.php:2497 course/gbtable2.php:2501
+#: course/gbtable2.php:2505
 msgid "Overall feedback on this attempt:"
 msgstr "Gesamt-Rückmeldung zu diesem Versuch:"
 
 #: course/gbtable2.php:2415 course/showfeedback.php:45
 #: course/showfeedback.php:88 course/gbtable2.php:2417 course/gbtable2.php:2494
-#: course/gbtable2.php:2499 course/gbtable2.php:2503
+#: course/gbtable2.php:2499 course/gbtable2.php:2503 course/gbtable2.php:2507
 msgid "Overall feedback:"
 msgstr "Gesamt-Rückmeldung:"
 
 #: course/gbtable2.php:2421 course/showfeedback.php:96 course/gbtable2.php:2423
 #: course/gbtable2.php:2500 course/gbtable2.php:2505 course/gbtable2.php:2509
+#: course/gbtable2.php:2513
 #, php-format
 msgid "Feedback on attempt %d"
 msgstr "Rückmeldung zu Versuch %d"
@@ -10758,21 +10782,25 @@ msgstr "Schnelles Speichern"
 
 #: course/gradeallq.php:686 course/gradeallq2.php:669 course/gradeallq2.php:684
 #: course/gradeallq2.php:710 course/gradeallq2.php:711
+#: course/gradeallq2.php:724
 msgid "Question Feedback"
 msgstr "Rückmeldung zur Frage"
 
 #: course/gradeallq.php:717 course/gradeallq2.php:700 course/gradeallq2.php:715
 #: course/gradeallq2.php:742 course/gradeallq2.php:743
+#: course/gradeallq2.php:756
 msgid "No submission to show"
 msgstr "Keine Einreichung anzuzeigen"
 
 #: course/gradeallq2.php:560 course/gradeallq2.php:571
 #: course/gradeallq2.php:588 course/gradeallq2.php:589
+#: course/gradeallq2.php:602
 msgid "View Work"
 msgstr "Lösungsweg ansehen"
 
 #: course/gradeallq2.php:639 course/gradeallq2.php:654
 #: course/gradeallq2.php:679 course/gradeallq2.php:680
+#: course/gradeallq2.php:693
 msgid "Show all tries"
 msgstr "Alle Versuche anzeigen"
 
@@ -10780,21 +10808,25 @@ msgstr "Alle Versuche anzeigen"
 #: course/gradeallq2.php:658 course/gradeallq2.php:675
 #: course/gradeallq2.php:683 course/gradeallq2.php:701
 #: course/gradeallq2.php:684 course/gradeallq2.php:702
+#: course/gradeallq2.php:697 course/gradeallq2.php:715
 msgid "Part"
 msgstr "Teil"
 
 #: course/gradeallq2.php:646 course/gradeallq2.php:661
 #: course/gradeallq2.php:686 course/gradeallq2.php:687
+#: course/gradeallq2.php:700
 msgid "Try"
 msgstr "Versuch"
 
 #: course/gradeallq2.php:655 course/gradeallq2.php:670
 #: course/gradeallq2.php:696 course/gradeallq2.php:697
+#: course/gradeallq2.php:710
 msgid "Show autosaves"
 msgstr "Automatisch gespeicherte Ergebnisse"
 
 #: course/gradeallq2.php:657 course/gradeallq2.php:672
 #: course/gradeallq2.php:698 course/gradeallq2.php:699
+#: course/gradeallq2.php:712
 msgid ""
 "Autosaves have been entered by the student but not submitted for grading, so "
 "are not included in the scoring."
@@ -11138,6 +11170,7 @@ msgstr "Benötigte Zeit (in Fragen)"
 
 #: course/gradebook.php:781 course/gradebook.php:785 course/gradeallq2.php:574
 #: course/gradeallq2.php:591 course/gradebook.php:792 course/gradeallq2.php:592
+#: course/gradeallq2.php:605
 msgid "Last Changed"
 msgstr "Zuletzt geändert"
 
@@ -11402,6 +11435,7 @@ msgstr "Zufällige Gruppe %d"
 
 #: course/managestugrps.php:619 course/managestugrps.php:646
 #: forums/posthandler.php:808 forums/posthandler.php:827
+#: forums/posthandler.php:826
 msgid "Yes, Remove"
 msgstr "Ja, entfernen"
 
@@ -13571,17 +13605,17 @@ msgstr ""
 msgid "Mark Selected as Read"
 msgstr "Markiere ausgewählte als Gelesen"
 
-#: forums/posthandler.php:275
+#: forums/posthandler.php:275 forums/posthandler.php:274
 msgid "New forum post notification"
 msgstr "Neuer Forenbeitrag"
 
 #: forums/posthandler.php:508 forums/thread.php:398 forums/posthandler.php:498
-#: forums/thread.php:409
+#: forums/thread.php:409 forums/posthandler.php:497
 msgid "Posting Instructions"
 msgstr "Hinweise zum Verfassen von Beiträgen"
 
 #: forums/posthandler.php:512 forums/thread.php:403 forums/posthandler.php:502
-#: forums/thread.php:414
+#: forums/thread.php:414 forums/posthandler.php:501
 msgid "Reply Instructions"
 msgstr "Hinweise zum Beantworten von Beiträgen"
 
@@ -14097,7 +14131,7 @@ msgstr "Anonym"
 #: javascript/AMhelpers2_min.js:1 javascript/assess2_min.js:2
 #: javascript/assessment_min.js:3 javascript/AMhelpers2.js:1703
 #: javascript/AMhelpers2.js:1775 javascript/AMhelpers2.js:1778
-#: javascript/AMhelpers2.js:1786
+#: javascript/AMhelpers2.js:1786 javascript/AMhelpers2.js:1787
 msgid "Invalid use of a comma."
 msgstr "Ungültige Verwendung des Komma."
 
@@ -14113,6 +14147,8 @@ msgstr "Ungültige Verwendung des Komma."
 #: javascript/AMhelpers2.js:1403 javascript/AMhelpers2.js:1899
 #: javascript/AMhelpers2.js:1903 javascript/AMhelpers2.js:1411
 #: javascript/AMhelpers2.js:1907 javascript/AMhelpers2.js:1911
+#: javascript/AMhelpers2.js:1412 javascript/AMhelpers2.js:1908
+#: javascript/AMhelpers2.js:1912
 msgid "syntax incomplete"
 msgstr "Syntax unvollständig"
 
@@ -14141,6 +14177,7 @@ msgstr "nicht beantwortet"
 #: javascript/AMhelpers2.js:1228 javascript/AMhelpers2.js:1263
 #: javascript/AMhelpers2.js:1230 javascript/AMhelpers2.js:1266
 #: javascript/AMhelpers2.js:1238 javascript/AMhelpers2.js:1274
+#: javascript/AMhelpers2.js:1239 javascript/AMhelpers2.js:1275
 msgid "invalid inequality notation"
 msgstr "Ungültige Ungleichungs-Schreibweise"
 
@@ -14148,7 +14185,7 @@ msgstr "Ungültige Ungleichungs-Schreibweise"
 #: javascript/AMhelpers2_min.js:1 javascript/assess2_min.js:2
 #: javascript/assessment_min.js:3 javascript/AMhelpers2.js:1193
 #: javascript/AMhelpers2.js:1265 javascript/AMhelpers2.js:1268
-#: javascript/AMhelpers2.js:1276
+#: javascript/AMhelpers2.js:1276 javascript/AMhelpers2.js:1277
 msgid "invalid interval notation"
 msgstr "ungültige Intervallschreibweise"
 
@@ -14156,7 +14193,7 @@ msgstr "ungültige Intervallschreibweise"
 #: javascript/AMhelpers2_min.js:1 javascript/assess2_min.js:2
 #: javascript/assessment_min.js:3 javascript/AMhelpers2.js:1295
 #: javascript/AMhelpers2.js:1367 javascript/AMhelpers2.js:1370
-#: javascript/AMhelpers2.js:1378
+#: javascript/AMhelpers2.js:1378 javascript/AMhelpers2.js:1379
 msgid "Invalid notation"
 msgstr "Ungültige Schreibweise"
 
@@ -14170,7 +14207,7 @@ msgstr "Syntax OK"
 #: javascript/AMhelpers2_min.js:1 javascript/assess2_min.js:2
 #: javascript/assessment_min.js:3 javascript/AMhelpers2.js:1513
 #: javascript/AMhelpers2.js:1585 javascript/AMhelpers2.js:1588
-#: javascript/AMhelpers2.js:1596
+#: javascript/AMhelpers2.js:1596 javascript/AMhelpers2.js:1597
 msgid "syntax error"
 msgstr "Syntaxfehler"
 
@@ -14183,6 +14220,7 @@ msgstr "Warnung"
 #: javascript/assess2_min.js:2 javascript/assessment_min.js:3
 #: javascript/AMhelpers2.js:1739 javascript/AMhelpers2.js:1811
 #: javascript/AMhelpers2.js:1814 javascript/AMhelpers2.js:1822
+#: javascript/AMhelpers2.js:1823
 msgid "Your answer contains an unrecognized symbol"
 msgstr "Ihre Antwort enthält ein unbekanntes Symbol"
 
@@ -14190,7 +14228,7 @@ msgstr "Ihre Antwort enthält ein unbekanntes Symbol"
 #: javascript/AMhelpers2_min.js:1 javascript/assess2_min.js:2
 #: javascript/assessment_min.js:3 javascript/AMhelpers2.js:1482
 #: javascript/AMhelpers2.js:1554 javascript/AMhelpers2.js:1557
-#: javascript/AMhelpers2.js:1565
+#: javascript/AMhelpers2.js:1565 javascript/AMhelpers2.js:1566
 msgid "syntax error: this is not an equation"
 msgstr "Syntaxfehler: Das ist keine Gleichung"
 
@@ -14198,7 +14236,7 @@ msgstr "Syntaxfehler: Das ist keine Gleichung"
 #: javascript/AMhelpers2_min.js:1 javascript/assess2_min.js:2
 #: javascript/assessment_min.js:3 javascript/AMhelpers2.js:1476
 #: javascript/AMhelpers2.js:1548 javascript/AMhelpers2.js:1551
-#: javascript/AMhelpers2.js:1559
+#: javascript/AMhelpers2.js:1559 javascript/AMhelpers2.js:1560
 msgid "syntax error: you gave an equation, not an expression"
 msgstr "Syntaxfehler: Sie haben eine Gleichung eingegeben, keinen Ausdruck"
 
@@ -14206,7 +14244,7 @@ msgstr "Syntaxfehler: Sie haben eine Gleichung eingegeben, keinen Ausdruck"
 #: javascript/AMhelpers2_min.js:1 javascript/assess2_min.js:2
 #: javascript/assessment_min.js:3 javascript/AMhelpers2.js:1711
 #: javascript/AMhelpers2.js:1783 javascript/AMhelpers2.js:1786
-#: javascript/AMhelpers2.js:1794
+#: javascript/AMhelpers2.js:1794 javascript/AMhelpers2.js:1795
 msgid " invalid entry format"
 msgstr " Ungültiges Eingabeformat"
 
@@ -14214,7 +14252,7 @@ msgstr " Ungültiges Eingabeformat"
 #: javascript/AMhelpers2_min.js:1 javascript/assess2_min.js:2
 #: javascript/assessment_min.js:3 javascript/AMhelpers2.js:1717
 #: javascript/AMhelpers2.js:1789 javascript/AMhelpers2.js:1792
-#: javascript/AMhelpers2.js:1800
+#: javascript/AMhelpers2.js:1800 javascript/AMhelpers2.js:1801
 msgid "not a valid fraction"
 msgstr "Kein gültiger Bruch"
 
@@ -14222,7 +14260,7 @@ msgstr "Kein gültiger Bruch"
 #: javascript/AMhelpers2_min.js:1 javascript/assess2_min.js:2
 #: javascript/assessment_min.js:3 javascript/AMhelpers2.js:1721
 #: javascript/AMhelpers2.js:1793 javascript/AMhelpers2.js:1796
-#: javascript/AMhelpers2.js:1804
+#: javascript/AMhelpers2.js:1804 javascript/AMhelpers2.js:1805
 msgid "not a valid mixed number"
 msgstr "keine gültige gemischte Zahl"
 
@@ -14230,7 +14268,7 @@ msgstr "keine gültige gemischte Zahl"
 #: javascript/AMhelpers2_min.js:1 javascript/assess2_min.js:2
 #: javascript/assessment_min.js:3 javascript/AMhelpers2.js:1729
 #: javascript/AMhelpers2.js:1801 javascript/AMhelpers2.js:1804
-#: javascript/AMhelpers2.js:1812
+#: javascript/AMhelpers2.js:1812 javascript/AMhelpers2.js:1813
 msgid "not valid scientific notation"
 msgstr "keine gültige wissenschaftliche Schreibweise"
 
@@ -14238,7 +14276,7 @@ msgstr "keine gültige wissenschaftliche Schreibweise"
 #: javascript/AMhelpers2_min.js:1 javascript/assess2_min.js:2
 #: javascript/assessment_min.js:3 javascript/AMhelpers2.js:1731
 #: javascript/AMhelpers2.js:1803 javascript/AMhelpers2.js:1806
-#: javascript/AMhelpers2.js:1814
+#: javascript/AMhelpers2.js:1814 javascript/AMhelpers2.js:1815
 msgid "not valid decimal or scientific notation"
 msgstr "keine gültige Dezimal- oder wissenschaftliche Schreibweise"
 
@@ -14246,7 +14284,7 @@ msgstr "keine gültige Dezimal- oder wissenschaftliche Schreibweise"
 #: javascript/AMhelpers2_min.js:1 javascript/assess2_min.js:2
 #: javascript/assessment_min.js:3 javascript/AMhelpers2.js:1736
 #: javascript/AMhelpers2.js:1808 javascript/AMhelpers2.js:1811
-#: javascript/AMhelpers2.js:1819
+#: javascript/AMhelpers2.js:1819 javascript/AMhelpers2.js:1820
 msgid " not a valid integer or decimal number"
 msgstr " keine ganze Zahl oder Dezimalzahl"
 
@@ -14254,7 +14292,7 @@ msgstr " keine ganze Zahl oder Dezimalzahl"
 #: javascript/AMhelpers2_min.js:1 javascript/assess2_min.js:2
 #: javascript/assessment_min.js:3 javascript/AMhelpers2.js:1747
 #: javascript/AMhelpers2.js:1819 javascript/AMhelpers2.js:1822
-#: javascript/AMhelpers2.js:1830
+#: javascript/AMhelpers2.js:1830 javascript/AMhelpers2.js:1831
 msgid "no trig functions allowed"
 msgstr "Trigonometrische Funktionen (sin, cos, etc.) sind nicht erlaubt"
 
@@ -14262,7 +14300,7 @@ msgstr "Trigonometrische Funktionen (sin, cos, etc.) sind nicht erlaubt"
 #: javascript/AMhelpers2_min.js:1 javascript/assess2_min.js:2
 #: javascript/assessment_min.js:3 javascript/AMhelpers2.js:1749
 #: javascript/AMhelpers2.js:1821 javascript/AMhelpers2.js:1824
-#: javascript/AMhelpers2.js:1832
+#: javascript/AMhelpers2.js:1832 javascript/AMhelpers2.js:1833
 msgid "no decimals allowed"
 msgstr "Dezimalwerte sind nicht erlaubt"
 
@@ -14270,7 +14308,7 @@ msgstr "Dezimalwerte sind nicht erlaubt"
 #: javascript/AMhelpers2_min.js:1 javascript/assess2_min.js:2
 #: javascript/assessment_min.js:3 javascript/AMhelpers2.js:1752
 #: javascript/AMhelpers2.js:1824 javascript/AMhelpers2.js:1827
-#: javascript/AMhelpers2.js:1835
+#: javascript/AMhelpers2.js:1835 javascript/AMhelpers2.js:1836
 msgid "mixed numbers are not allowed"
 msgstr "Gemischte Zahlen sind nicht erlaubt"
 
@@ -14278,7 +14316,7 @@ msgstr "Gemischte Zahlen sind nicht erlaubt"
 #: javascript/AMhelpers2_min.js:1 javascript/assess2_min.js:2
 #: javascript/assessment_min.js:3 javascript/AMhelpers2.js:1769
 #: javascript/AMhelpers2.js:1843 javascript/AMhelpers2.js:1846
-#: javascript/AMhelpers2.js:1854
+#: javascript/AMhelpers2.js:1854 javascript/AMhelpers2.js:1855
 msgid "unmatched parens"
 msgstr "Klammerfehler"
 
@@ -14286,7 +14324,7 @@ msgstr "Klammerfehler"
 #: javascript/AMhelpers2_min.js:1 javascript/assess2_min.js:2
 #: javascript/assessment_min.js:3 javascript/AMhelpers2.js:1772
 #: javascript/AMhelpers2.js:1846 javascript/AMhelpers2.js:1849
-#: javascript/AMhelpers2.js:1857
+#: javascript/AMhelpers2.js:1857 javascript/AMhelpers2.js:1858
 msgid "unmatched absolute value bars"
 msgstr "Die Striche für den Absolutbetrag passen nicht"
 
@@ -14294,7 +14332,7 @@ msgstr "Die Striche für den Absolutbetrag passen nicht"
 #: javascript/AMhelpers2_min.js:1 javascript/assess2_min.js:2
 #: javascript/assessment_min.js:3 javascript/AMhelpers2.js:1781
 #: javascript/AMhelpers2.js:1855 javascript/AMhelpers2.js:1858
-#: javascript/AMhelpers2.js:1866
+#: javascript/AMhelpers2.js:1866 javascript/AMhelpers2.js:1867
 msgid "use function notation"
 msgstr "Funktionsschreibweise verwenden"
 
@@ -14302,7 +14340,7 @@ msgstr "Funktionsschreibweise verwenden"
 #: javascript/AMhelpers2_min.js:1 javascript/assess2_min.js:2
 #: javascript/assessment_min.js:3 javascript/AMhelpers2.js:1781
 #: javascript/AMhelpers2.js:1855 javascript/AMhelpers2.js:1858
-#: javascript/AMhelpers2.js:1866
+#: javascript/AMhelpers2.js:1866 javascript/AMhelpers2.js:1867
 msgid "use $1 instead of $2"
 msgstr "Benutze $1 statt $2"
 
@@ -14310,7 +14348,7 @@ msgstr "Benutze $1 statt $2"
 #: javascript/AMhelpers2_min.js:1 javascript/assess2_min.js:2
 #: javascript/assessment_min.js:3 javascript/AMhelpers2.js:1786
 #: javascript/AMhelpers2.js:1860 javascript/AMhelpers2.js:1863
-#: javascript/AMhelpers2.js:1871
+#: javascript/AMhelpers2.js:1871 javascript/AMhelpers2.js:1872
 msgid " Check your variables - you might be using an incorrect one"
 msgstr " Überprüfen Sie Ihre Variablen! Verwenden Sie nur zulässige Variable"
 
@@ -14318,7 +14356,7 @@ msgstr " Überprüfen Sie Ihre Variablen! Verwenden Sie nur zulässige Variable"
 #: javascript/AMhelpers2_min.js:1 javascript/assess2_min.js:2
 #: javascript/assessment_min.js:3 javascript/AMhelpers2.js:1793
 #: javascript/AMhelpers2.js:1867 javascript/AMhelpers2.js:1870
-#: javascript/AMhelpers2.js:1878
+#: javascript/AMhelpers2.js:1878 javascript/AMhelpers2.js:1879
 msgid ""
 " You may want to use abs(x) instead of |x| for absolute values to avoid "
 "ambiguity"
@@ -14330,7 +14368,7 @@ msgstr ""
 #: javascript/AMhelpers2_min.js:1 javascript/assess2_min.js:2
 #: javascript/assessment_min.js:3 javascript/AMhelpers2.js:1799
 #: javascript/AMhelpers2.js:1873 javascript/AMhelpers2.js:1876
-#: javascript/AMhelpers2.js:1884
+#: javascript/AMhelpers2.js:1884 javascript/AMhelpers2.js:1885
 msgid " Do not use the percent symbol, %"
 msgstr " Benutzen Sie nicht das Prozentzeichen %"
 
@@ -14401,35 +14439,35 @@ msgstr "Lösung ansehen"
 #: javascript/AMhelpers2.js:1118 javascript/AMhelpers2_min.js:1
 #: javascript/assess2_min.js:2 javascript/AMhelpers2.js:1155
 #: javascript/AMhelpers2.js:1227 javascript/AMhelpers2.js:1229
-#: javascript/AMhelpers2.js:1237
+#: javascript/AMhelpers2.js:1237 javascript/AMhelpers2.js:1238
 msgid "you may have used the wrong variable"
 msgstr "Sie haben vielleicht die falsche Variable verwendet"
 
 #: javascript/AMhelpers2.js:1399 javascript/AMhelpers2_min.js:1
 #: javascript/assess2_min.js:2 javascript/AMhelpers2.js:1436
 #: javascript/AMhelpers2.js:1508 javascript/AMhelpers2.js:1511
-#: javascript/AMhelpers2.js:1519
+#: javascript/AMhelpers2.js:1519 javascript/AMhelpers2.js:1520
 msgid "Invalid matrix format"
 msgstr "Ungültiges Format der Matrix"
 
 #: javascript/AMhelpers2.js:1427 javascript/AMhelpers2_min.js:1
 #: javascript/assess2_min.js:2 javascript/AMhelpers2.js:1464
 #: javascript/AMhelpers2.js:1536 javascript/AMhelpers2.js:1539
-#: javascript/AMhelpers2.js:1547
+#: javascript/AMhelpers2.js:1547 javascript/AMhelpers2.js:1548
 msgid "syntax error: you gave an inequality, not an equation"
 msgstr "Syntaxfehler: Sie haben eine Ungleichung eingegeben, keine Gleichung"
 
 #: javascript/AMhelpers2.js:1429 javascript/AMhelpers2_min.js:1
 #: javascript/assess2_min.js:2 javascript/AMhelpers2.js:1466
 #: javascript/AMhelpers2.js:1538 javascript/AMhelpers2.js:1541
-#: javascript/AMhelpers2.js:1549
+#: javascript/AMhelpers2.js:1549 javascript/AMhelpers2.js:1550
 msgid "syntax error: you gave an inequality, not an expression"
 msgstr "Syntaxfehler: Sie haben eine Ungleichung eingegeben, keinen Ausdruck"
 
 #: javascript/AMhelpers2.js:1432 javascript/AMhelpers2_min.js:1
 #: javascript/assess2_min.js:2 javascript/AMhelpers2.js:1469
 #: javascript/AMhelpers2.js:1541 javascript/AMhelpers2.js:1544
-#: javascript/AMhelpers2.js:1552
+#: javascript/AMhelpers2.js:1552 javascript/AMhelpers2.js:1553
 msgid "syntax error: your inequality should only contain one inequality symbol"
 msgstr ""
 "Syntaxfehler: Ihre Ungleichung sollte nur ein Vergleichssymbol enthalten"
@@ -14437,14 +14475,14 @@ msgstr ""
 #: javascript/AMhelpers2.js:1437 javascript/AMhelpers2_min.js:1
 #: javascript/assess2_min.js:2 javascript/AMhelpers2.js:1474
 #: javascript/AMhelpers2.js:1546 javascript/AMhelpers2.js:1549
-#: javascript/AMhelpers2.js:1557
+#: javascript/AMhelpers2.js:1557 javascript/AMhelpers2.js:1558
 msgid "syntax error: you gave an equation, not an inequality"
 msgstr "Syntaxfehler: Sie haben eine Gleichung eingegeben, keine Ungleichung"
 
 #: javascript/AMhelpers2.js:1441 javascript/AMhelpers2_min.js:1
 #: javascript/assess2_min.js:2 javascript/AMhelpers2.js:1478
 #: javascript/AMhelpers2.js:1550 javascript/AMhelpers2.js:1553
-#: javascript/AMhelpers2.js:1561
+#: javascript/AMhelpers2.js:1561 javascript/AMhelpers2.js:1562
 msgid "syntax error: your equation should only contain one equal sign"
 msgstr ""
 "Syntaxfehler: Ihre Gleichung sollte nur ein Gleichheitszeichen enthalten"
@@ -14452,7 +14490,7 @@ msgstr ""
 #: javascript/AMhelpers2.js:1447 javascript/AMhelpers2_min.js:1
 #: javascript/assess2_min.js:2 javascript/AMhelpers2.js:1484
 #: javascript/AMhelpers2.js:1556 javascript/AMhelpers2.js:1559
-#: javascript/AMhelpers2.js:1567
+#: javascript/AMhelpers2.js:1567 javascript/AMhelpers2.js:1568
 msgid "syntax error: this is not an inequality"
 msgstr "Syntaxfehler: Das ist keine Ungleichung"
 
@@ -15855,6 +15893,7 @@ msgstr "Fehler beim Auswerten des Codes in dieser Frage: "
 #: assess2/questions/QuestionHtmlGenerator.php:410
 #: assess2/questions/QuestionHtmlGenerator.php:426
 #: assess2/questions/QuestionHtmlGenerator.php:428
+#: assess2/questions/QuestionHtmlGenerator.php:427
 msgid "Caught error while generating this question: "
 msgstr "Fehler beim Erzeugen dieser Frage: "
 
@@ -15864,6 +15903,7 @@ msgstr "Fehler beim Erzeugen dieser Frage: "
 #: assess2/questions/QuestionHtmlGenerator.php:595
 #: assess2/questions/QuestionHtmlGenerator.php:615
 #: assess2/questions/QuestionHtmlGenerator.php:620
+#: assess2/questions/QuestionHtmlGenerator.php:619
 msgid "Caught error while evaluating the text in this question: "
 msgstr "Fehler im Text dieser Frage: "
 
@@ -15886,6 +15926,7 @@ msgstr "Frage %d"
 #: assess2/questions/QuestionHtmlGenerator.php:688
 #: assess2/questions/QuestionHtmlGenerator.php:693
 #: assess2/questions/QuestionHtmlGenerator.php:692
+#: assess2/questions/QuestionHtmlGenerator.php:691
 #, php-format
 msgid "Part %d of %d"
 msgstr "Teil %d von %d"
@@ -16086,11 +16127,13 @@ msgstr "Es wurden noch keine Elemente hinzugefügt"
 
 #: assessment/macros.php:2420 assessment/macros.php:2423
 #: assessment/macros.php:2435 assessment/macros.php:2440
+#: assessment/macros.php:2442
 msgid "himself"
 msgstr "ihm"
 
 #: assessment/macros.php:2422 assessment/macros.php:2425
 #: assessment/macros.php:2437 assessment/macros.php:2442
+#: assessment/macros.php:2444
 msgid "herself"
 msgstr "ihr"
 
@@ -16098,6 +16141,7 @@ msgstr "ihr"
 #: assessment/macros.php:2429 assessment/macros.php:2431
 #: assessment/macros.php:2441 assessment/macros.php:2443
 #: assessment/macros.php:2446 assessment/macros.php:2448
+#: assessment/macros.php:2450
 msgid "they"
 msgstr "sie"
 
@@ -16105,6 +16149,7 @@ msgstr "sie"
 #: assessment/macros.php:2429 assessment/macros.php:2431
 #: assessment/macros.php:2441 assessment/macros.php:2443
 #: assessment/macros.php:2446 assessment/macros.php:2448
+#: assessment/macros.php:2450
 msgid "them"
 msgstr "ihnen"
 
@@ -16112,6 +16157,7 @@ msgstr "ihnen"
 #: assessment/macros.php:2429 assessment/macros.php:2431
 #: assessment/macros.php:2441 assessment/macros.php:2443
 #: assessment/macros.php:2446 assessment/macros.php:2448
+#: assessment/macros.php:2450
 msgid "their"
 msgstr "ihr"
 
@@ -16119,6 +16165,7 @@ msgstr "ihr"
 #: assessment/macros.php:2429 assessment/macros.php:2431
 #: assessment/macros.php:2441 assessment/macros.php:2443
 #: assessment/macros.php:2446 assessment/macros.php:2448
+#: assessment/macros.php:2450
 msgid "theirs"
 msgstr "ihre"
 
@@ -16126,6 +16173,7 @@ msgstr "ihre"
 #: assessment/macros.php:2429 assessment/macros.php:2431
 #: assessment/macros.php:2441 assessment/macros.php:2443
 #: assessment/macros.php:2446 assessment/macros.php:2448
+#: assessment/macros.php:2450
 msgid "themself"
 msgstr "ihnen"
 
@@ -16476,7 +16524,8 @@ msgstr "Alle außer dem letzten"
 msgid "All but first and last"
 msgstr "Alle außer dem ersten und letzten"
 
-#: course/addforum.php:417 course/addwiki.php:235
+#: course/addforum.php:417 course/addwiki.php:235 course/addforum.php:419
+#: course/addwiki.php:236
 msgid "Use Course Sections"
 msgstr "Kurs-Abschnitte verwenden"
 
@@ -16539,23 +16588,23 @@ msgstr "Zur Startseite"
 msgid "If you are already enrolled, you can log in there."
 msgstr "Wenn Sie bereits registriert sind, können Sie sich dort anmelden."
 
-#: forums/posthandler.php:640
+#: forums/posthandler.php:640 forums/posthandler.php:639
 msgid "Set thread to section"
 msgstr "Unterhaltung Abschnitt zuordnen"
 
-#: forums/posthandler.php:642
+#: forums/posthandler.php:642 forums/posthandler.php:641
 msgid "Set thread to group"
 msgstr "Unterhaltung Gruppe zuordnen"
 
-#: forums/posthandler.php:653
+#: forums/posthandler.php:653 forums/posthandler.php:652
 msgid "Non section-specific"
 msgstr "Nicht Abschnitts-spezifisch"
 
-#: forums/posthandler.php:655
+#: forums/posthandler.php:655 forums/posthandler.php:654
 msgid "Non group-specific"
 msgstr "Nicht Gruppen-spezifisch"
 
-#: forums/posthandler.php:673
+#: forums/posthandler.php:673 forums/posthandler.php:672
 msgid ""
 "Warning: students from any section can reply to this post, which may expose "
 "student names cross-section."
@@ -17026,7 +17075,7 @@ msgstr "Termin hinzufügen"
 
 #: javascript/AMhelpers2.js:1141 javascript/AMhelpers2_min.js:1
 #: javascript/assess2_min.js:2 javascript/AMhelpers2.js:1143
-#: javascript/AMhelpers2.js:1151
+#: javascript/AMhelpers2.js:1151 javascript/AMhelpers2.js:1152
 msgid ""
 "Units must be given as [decimal number]*[unit]^[power]*[unit]^[power].../"
 "[unit]^[power]*[unit]^[power]..."
@@ -17037,49 +17086,49 @@ msgstr ""
 
 #: javascript/AMhelpers2.js:1143 javascript/AMhelpers2_min.js:1
 #: javascript/assess2_min.js:2 javascript/AMhelpers2.js:1145
-#: javascript/AMhelpers2.js:1153
+#: javascript/AMhelpers2.js:1153 javascript/AMhelpers2.js:1154
 msgid "Answer must start with a number. "
 msgstr "Die Antwort muss mit einer Zahl beginnen. "
 
 #: javascript/AMhelpers2.js:1155 javascript/AMhelpers2_min.js:1
 #: javascript/assess2_min.js:2 javascript/AMhelpers2.js:1157
-#: javascript/AMhelpers2.js:1165
+#: javascript/AMhelpers2.js:1165 javascript/AMhelpers2.js:1166
 msgid "Invalid exponents. "
 msgstr "Ungültige Exponenten. "
 
 #: javascript/AMhelpers2.js:1159 javascript/AMhelpers2_min.js:1
 #: javascript/assess2_min.js:2 javascript/AMhelpers2.js:1161
-#: javascript/AMhelpers2.js:1169
+#: javascript/AMhelpers2.js:1169 javascript/AMhelpers2.js:1170
 msgid "Only one division symbol allowed in the units. "
 msgstr "In den Einheiten ist nur ein Bruchstrich erlaubt. "
 
 #: javascript/AMhelpers2.js:1168 javascript/AMhelpers2_min.js:1
 #: javascript/assess2_min.js:2 javascript/AMhelpers2.js:1170
-#: javascript/AMhelpers2.js:1178
+#: javascript/AMhelpers2.js:1178 javascript/AMhelpers2.js:1179
 msgid "Unknown unit "
 msgstr "Unbekannte Einheit "
 
 #: javascript/AMhelpers2.js:1172 javascript/AMhelpers2_min.js:1
 #: javascript/assess2_min.js:2 javascript/AMhelpers2.js:1174
-#: javascript/AMhelpers2.js:1182
+#: javascript/AMhelpers2.js:1182 javascript/AMhelpers2.js:1183
 msgid "Missing units"
 msgstr "Einheit fehlt"
 
 #: javascript/AMhelpers2.js:1176 javascript/AMhelpers2_min.js:1
 #: javascript/assess2_min.js:2 javascript/AMhelpers2.js:1178
-#: javascript/AMhelpers2.js:1186
+#: javascript/AMhelpers2.js:1186 javascript/AMhelpers2.js:1187
 msgid "This is not an integer."
 msgstr "Das ist keine ganze Zahl."
 
 #: javascript/AMhelpers2.js:1180 javascript/AMhelpers2_min.js:1
 #: javascript/assess2_min.js:2 javascript/AMhelpers2.js:1182
-#: javascript/AMhelpers2.js:1190
+#: javascript/AMhelpers2.js:1190 javascript/AMhelpers2.js:1191
 msgid "This is not a decimal or integer value."
 msgstr "Das ist keine ganze Zahl oder Dezimalzahl."
 
 #: javascript/AMhelpers2.js:1826 javascript/AMhelpers2_min.js:1
 #: javascript/assess2_min.js:2 javascript/AMhelpers2.js:1829
-#: javascript/AMhelpers2.js:1837
+#: javascript/AMhelpers2.js:1837 javascript/AMhelpers2.js:1838
 msgid "no degree symbols allowed"
 msgstr "Grad-Symbole sind nicht erlaubt"
 
@@ -17303,6 +17352,7 @@ msgid "Clear default feedback"
 msgstr "Standard-Rückmeldung löschen"
 
 #: course/gradeallq2.php:728 course/gradeallq2.php:729
+#: course/gradeallq2.php:742
 msgid "Question ID "
 msgstr "Fragen-ID "
 
@@ -18276,3 +18326,110 @@ msgstr "Datei"
 #: course/gradeallq2.php:410
 msgid "Show All Work"
 msgstr "Alle eingereichten Lösungen anzeigen"
+
+#: assessment/libs/conversion.php:234 assessment/libs/conversion.php:249
+#: assessment/libs/conversion.php:394 assessment/libs/conversion.php:402
+#: assessment/libs/conversion.php:410 assessment/libs/conversion.php:420
+#: assessment/libs/conversion.php:440 assessment/libs/conversion.php:779
+#: assessment/libs/conversion.php:780 assessment/libs/conversion.php:875
+#: assessment/libs/conversion.php:876
+msgid "Deca"
+msgstr "Deka"
+
+#: assessment/libs/conversion.php:236 assessment/libs/conversion.php:251
+#: assessment/libs/conversion.php:409
+msgid "Gram"
+msgstr "Gramm"
+
+#: assessment/libs/conversion.php:238 assessment/libs/conversion.php:253
+#: assessment/libs/conversion.php:401 assessment/libs/conversion.php:600
+#: assessment/libs/conversion.php:601 assessment/libs/conversion.php:602
+#: assessment/libs/conversion.php:603 assessment/libs/conversion.php:604
+#: assessment/libs/conversion.php:605 assessment/libs/conversion.php:615
+#: assessment/libs/conversion.php:616 assessment/libs/conversion.php:617
+#: assessment/libs/conversion.php:618 assessment/libs/conversion.php:619
+#: assessment/libs/conversion.php:629 assessment/libs/conversion.php:630
+#: assessment/libs/conversion.php:631 assessment/libs/conversion.php:632
+#: assessment/libs/conversion.php:633 assessment/libs/conversion.php:894
+#: assessment/libs/conversion.php:900 assessment/libs/conversion.php:902
+msgid "Liter"
+msgstr "Liter"
+
+#: assessment/libs/conversion.php:240 assessment/libs/conversion.php:255
+#: assessment/libs/conversion.php:393 assessment/libs/conversion.php:419
+#: assessment/libs/conversion.php:439 assessment/libs/conversion.php:780
+#: assessment/libs/conversion.php:781 assessment/libs/conversion.php:811
+#: assessment/libs/conversion.php:814 assessment/libs/conversion.php:876
+#: assessment/libs/conversion.php:877
+msgid "Meter"
+msgstr "Meter"
+
+#: assessment/libs/conversion.php:390 assessment/libs/conversion.php:391
+#: assessment/libs/conversion.php:392 assessment/libs/conversion.php:394
+#: assessment/libs/conversion.php:395 assessment/libs/conversion.php:396
+#: assessment/libs/conversion.php:416 assessment/libs/conversion.php:417
+#: assessment/libs/conversion.php:418 assessment/libs/conversion.php:420
+#: assessment/libs/conversion.php:421 assessment/libs/conversion.php:422
+#: assessment/libs/conversion.php:424 assessment/libs/conversion.php:425
+#: assessment/libs/conversion.php:426 assessment/libs/conversion.php:427
+#: assessment/libs/conversion.php:428 assessment/libs/conversion.php:429
+#: assessment/libs/conversion.php:430 assessment/libs/conversion.php:436
+#: assessment/libs/conversion.php:437 assessment/libs/conversion.php:438
+#: assessment/libs/conversion.php:440 assessment/libs/conversion.php:441
+#: assessment/libs/conversion.php:442 assessment/libs/conversion.php:444
+#: assessment/libs/conversion.php:445 assessment/libs/conversion.php:446
+#: assessment/libs/conversion.php:447 assessment/libs/conversion.php:448
+#: assessment/libs/conversion.php:449 assessment/libs/conversion.php:450
+#: assessment/libs/conversion.php:510 assessment/libs/conversion.php:511
+#: assessment/libs/conversion.php:512 assessment/libs/conversion.php:513
+#: assessment/libs/conversion.php:514 assessment/libs/conversion.php:515
+#: assessment/libs/conversion.php:524 assessment/libs/conversion.php:525
+#: assessment/libs/conversion.php:526 assessment/libs/conversion.php:527
+#: assessment/libs/conversion.php:536 assessment/libs/conversion.php:537
+#: assessment/libs/conversion.php:538 assessment/libs/conversion.php:539
+#: assessment/libs/conversion.php:778 assessment/libs/conversion.php:779
+#: assessment/libs/conversion.php:780 assessment/libs/conversion.php:781
+#: assessment/libs/conversion.php:782 assessment/libs/conversion.php:783
+#: assessment/libs/conversion.php:784 assessment/libs/conversion.php:787
+#: assessment/libs/conversion.php:788 assessment/libs/conversion.php:789
+#: assessment/libs/conversion.php:790 assessment/libs/conversion.php:791
+#: assessment/libs/conversion.php:792 assessment/libs/conversion.php:793
+#: assessment/libs/conversion.php:801 assessment/libs/conversion.php:803
+#: assessment/libs/conversion.php:874 assessment/libs/conversion.php:875
+#: assessment/libs/conversion.php:876 assessment/libs/conversion.php:877
+#: assessment/libs/conversion.php:878 assessment/libs/conversion.php:879
+#: assessment/libs/conversion.php:881 assessment/libs/conversion.php:882
+#: assessment/libs/conversion.php:883 assessment/libs/conversion.php:884
+#: assessment/libs/conversion.php:885 assessment/libs/conversion.php:886
+msgid "meter"
+msgstr "meter"
+
+#: assessment/libs/conversion.php:398 assessment/libs/conversion.php:399
+#: assessment/libs/conversion.php:400 assessment/libs/conversion.php:402
+#: assessment/libs/conversion.php:403 assessment/libs/conversion.php:404
+#: assessment/libs/conversion.php:600 assessment/libs/conversion.php:601
+#: assessment/libs/conversion.php:602 assessment/libs/conversion.php:603
+#: assessment/libs/conversion.php:604 assessment/libs/conversion.php:605
+#: assessment/libs/conversion.php:892
+msgid "liter"
+msgstr "liter"
+
+#: assessment/libs/conversion.php:406 assessment/libs/conversion.php:407
+#: assessment/libs/conversion.php:408 assessment/libs/conversion.php:410
+#: assessment/libs/conversion.php:411 assessment/libs/conversion.php:412
+#: assessment/libs/conversion.php:691 assessment/libs/conversion.php:692
+#: assessment/libs/conversion.php:693 assessment/libs/conversion.php:694
+#: assessment/libs/conversion.php:695 assessment/libs/conversion.php:696
+#: assessment/libs/conversion.php:697 assessment/libs/conversion.php:704
+#: assessment/libs/conversion.php:705 assessment/libs/conversion.php:712
+#: assessment/libs/conversion.php:713
+msgid "gram"
+msgstr "gramm"
+
+#: assessment/libs/conversion.php:428 assessment/libs/conversion.php:448
+#: assessment/libs/conversion.php:512 assessment/libs/conversion.php:602
+#: assessment/libs/conversion.php:693 assessment/libs/conversion.php:788
+#: assessment/libs/conversion.php:789 assessment/libs/conversion.php:882
+#: assessment/libs/conversion.php:883
+msgid "deca"
+msgstr "deka"

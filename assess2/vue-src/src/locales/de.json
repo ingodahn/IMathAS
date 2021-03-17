@@ -208,7 +208,6 @@
     "viewwork_immediately": "Sie können Ihre Arbeit und Ihre Punkte in der Notenübersicht ansehen.",
     "viewwork_after_due": "Sie können Ihre Arbeit und Ihre Punkte nach der Fälligkeit des Tests in der Notenübersicht ansehen.",
     "viewwork_work_scores_after": "Sie können Ihre Arbeit und Ihre Punkte nach Fälligkeit des Tests in der Notenübersicht ansehen.",
-    "viewwork_never": "",
     "score": "Punkte",
     "recordedscore": "Gespeicherter Punktestand",
     "use_override": "Note durch Dozent korrigiert",
@@ -353,8 +352,7 @@
     "eqnedoff": "Formeleditor ausgeschaltet",
     "more": "Mehr",
     "clipboard": "Clipboard",
-    "rubric": "Lernziel",
-    "none": ""
+    "rubric": "Lernziel"
   },
   "gradebook": {
     "detail_title": "Testversuche ansehen",
@@ -384,6 +382,7 @@
     "full_credit": "Volle Punktzahl",
     "add_feedback": "Rückmeldung hinzufügen",
     "feedback": "Rückmeldung",
+    "feedback_for": "Rückmeldung für {name}",
     "general_feedback": "Allgemeine Rückmeldung",
     "use_in_msg": "Verwendung in Nachricht",
     "clear_hdr": "Bestätigung löschen",
@@ -441,6 +440,12 @@
     "avail_after_take": "Wird angezeigt, wenn Sie einen Test-Versuch einreichen.",
     "avail_after_due": "Wird nach Fälligkeit angezeigt.",
     "latepass_blocked_practice": "Verspätetes Einreichen ist blockiert, weil der Studierende den Test im Übungs-Modus angesehen hat.",
+    "latepass_blocked_gb": "Die Verwendung von Kulanzguthaben ist zurzeit gesperrt, da der/die Studierende die Antworten des Tests in der Notenübersicht gesehen hat.",
+    "latepass_blocked_lpcutoff": "Die Verwendung von Kulanzguthaben ist zurzeit gesperrt, da die Kulanzguthaben abgelaufen sind.",
+    "latepass_blocked_courseend": "Die Verwendung von Kulanzguthaben ist zurzeit gesperrt, da der Kurs beendet ist.",
+    "latepass_blocked_pastdue": "Die Verwendung von Kulanzguthaben ist zurzeit gesperrt, da das Fälligkeitsdatum erreicht ist und da Kulanzguthaben so konfiguriert sind dass sie danach nicht mehr verwendet werden können.",
+    "latepass_blocked_toolate": "Die Verwendung von Kulanzguthaben ist zurzeit gesperrt, da es zu lange nach dem Fälligkeitsdatum ist um den Test mit der erlaubten Anzahl von Kulanzguthaben erneut zu öffnen.",
+    "latepass_blocked_toofew": "Die Verwendung von Kulanzguthaben ist zurzeit gesperrt, da der/die Studierende nicht genügend Kulanzguthaben hat.",
     "clear_latepass_block": "Block leeren",
     "showwork": "Lösung anzeigen",
     "hidework": "Lösung ausblenden",
