@@ -24,7 +24,7 @@ $placeinhead .= '<script type="text/javascript" src="'.$imasroot.'/javascript/jq
 
 		$error .= checkNewUserValidation($extrarequired);
 
-		if (isset($_POST['email2'])) {
+		if (isset($_POST['email2']) && strlen($_POST['email2']) > 0) {
 			$error .= "<p>Data found!</p>";
 		}
 
