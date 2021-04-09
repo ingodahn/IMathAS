@@ -84,9 +84,9 @@ $placeinhead .= '<script type="text/javascript" src="'.$imasroot.'/javascript/jq
 			$stm = $DBH->prepare("INSERT INTO imas_instr_acct_reqs (userid,status,reqdate,reqdata) VALUES (?,0,?,?)");
 			$stm->execute(array($newuserid, $now, json_encode($reqdata)));
 
-			$message = "<p>Ihr Antrag für eine Dozentenkennung wurde abgeschickt.</p>  ";
-			$message .= "<p>Ihr Antrag wird geprüft; bitte haben Sie etwas Geduld.</p>";
-			$message1 = $message."<p>Mit freundlichen Grüßen</p><p>Ihr IMathAS-Administrator</p>";
+			$message = "<p>Ihr Antrag f&uuml:r eine Dozentenkennung wurde abgeschickt.</p>  ";
+			$message .= "<p>Ihr Antrag wird gepr&uuml;ft; bitte haben Sie etwas Geduld.</p>";
+			$message1 = $message."<p>Mit freundlichen Gr&uuml;ßen</p><p>Ihr IMathAS-Administrator</p>";
 			mail($_POST['email'],$subject,$message1,$headers);
 
 			echo $message;
