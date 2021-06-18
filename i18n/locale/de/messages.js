@@ -272,4 +272,6 @@ var i18njs = {"Submit":"Absenden",
 "My Question":"Meine Frage",
 "Marked as broken":"Als <b>defekt</b> markiert",
 "Un-mark as in wrong library":"Marlierung <b>Falsche Bibliothek</b> entfernen",
-"Mark as in wrong library":"Mit <b>Falsche Bibliothek</b> markieren"};
+"Mark as in wrong library":"Mit <b>Falsche Bibliothek</b> markieren",
+"Remove Group and Questions":"Entferne die Gruppe und die Fragen",
+"Ungroup all Questions":"Hebe die Gruppierung aller Fragen auf"};

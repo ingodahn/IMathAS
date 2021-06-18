@@ -125,7 +125,9 @@
     "jump_warn": "Dies verbraucht alle übrigen Versuche für diese Version der Frage.",
     "showwork": "Hier können Sie Ihre ausführliche Lösung einreichen. Sie können auch ein Foto Ihrer Notizen in diesen Bereich ziehen oder über das Büroklammer-Symbol hochladen.",
     "uploadwork": "Geben Sie hier Ihre Lösung ein, indem Sie eine Datei oder ein Bild hochladen",
-    "uploading": "Lade hoch..."
+    "uploading": "Lade hoch...",
+    "intronext": "Um zu beginnen, navigieren Sie über die Auswahl oder mit der >-Schaltfläche zu einer Frage ",
+    "firstq": "Erste Frage"
   },
   "header": {
     "score": "Punkte: {pts}/{poss}",
@@ -403,6 +405,7 @@
     "filters": "Volle Punktzahl für alle manuell zu bewertenden Teile",
     "hide": "Filter und Optionen",
     "hide_perfect": "Fragen mit voller Punktzahl ausblenden",
+    "hide_100": "Punkte = 100% (nach Punktabzügen)",
     "hide_nonzero": "0 < Punktzahl < 100%",
     "hide_zero": "Punkte = 0",
     "hide_fb": "Fragen mit Rückmeldung",
@@ -457,7 +460,8 @@
     "has_timeext": "Hat eine Verlängerung um {n} Minuten",
     "used_timeext": "Hat eine Verlängerung um {n} Minuten genutzt",
     "attemptext": "Ausnahme für {n} zusätzliche Versionen genehmigt",
-    "preview_files": "Vorschau aller Dateien"
+    "preview_files": "Vorschau aller Dateien",
+    "introtexts": "Einführung und Text zwischen den Fragen"
   },
   "work": {
     "add": "Lösung hinzufügen",
