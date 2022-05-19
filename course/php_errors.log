@@ -1,0 +1,2 @@
+[07-May-2022 19:25:07 Europe/Berlin] Caught error by QuestionGenerator in /var/www/html/IMathAS/assess2/questions/QuestionHtmlGenerator.php in QSID 43:567 -- count(): Parameter must be an array or an object that implements Countable
+[07-May-2022 19:42:45 Europe/Berlin] Caught error by QuestionGenerator in /var/www/html/IMathAS/assess2/questions/QuestionHtmlGenerator.php(198) : eval()'d code in QSID 43:1 -- Use of undefined constant error - assumed 'error' (this will throw an Error in a future version of PHP)
