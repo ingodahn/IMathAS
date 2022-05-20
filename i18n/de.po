@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-18 11:58+0200\n"
-"PO-Revision-Date: 2021-06-18 12:32+0200\n"
+"POT-Creation-Date: 2022-05-19 20:45+0200\n"
+"PO-Revision-Date: 2022-05-20 08:52+0200\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1778,7 +1778,7 @@ msgstr "Kulanz-Guthaben verlängert die Fälligkeit um"
 #: admin/forms.php:923 assessment/showtest.php:1487 course/exportcalfeed.php:36
 #: admin/forms.php:921 admin/forms.php:953 admin/forms.php:954
 #: admin/forms.php:957 admin/forms.php:997 admin/forms.php:1007
-#: admin/forms.php:1008
+#: admin/forms.php:1008 assessment/libs/conversion.php:1239
 msgid "hours"
 msgstr "Stunden"
 
@@ -5685,7 +5685,7 @@ msgstr "Fällig in "
 
 #: assessment/showtest.php:1489 assessment/showtest.php:3660
 #: course/drillassess.php:233 course/exportcalfeed.php:36
-#: course/drillassess.php:264
+#: course/drillassess.php:264 assessment/libs/conversion.php:1237
 msgid "minutes"
 msgstr "Minuten"
 
@@ -5702,7 +5702,7 @@ msgstr "Fällig"
 #: course/courseshowitems.php:868 course/gradebook.php:855
 #: course/courseshowitems.php:869 course/gradebook.php:862
 #: course/gradebook.php:866 course/courseshowitems.php:873
-#: course/gradebook.php:869
+#: course/gradebook.php:869 assessment/libs/conversion.php:1238
 msgid "hour"
 msgstr "Stunde"
 
@@ -5715,7 +5715,7 @@ msgstr "Stunde"
 #: course/courseshowitems.php:878 course/gradebook.php:871
 #: course/gradebook.php:868 course/gradebook.php:875
 #: course/courseshowitems.php:875 course/courseshowitems.php:882
-#: course/gradebook.php:878
+#: course/gradebook.php:878 assessment/libs/conversion.php:1236
 msgid "minute"
 msgstr "Minute"
 
@@ -6354,7 +6354,7 @@ msgid "Time limit exceeded by"
 msgstr "Zeitlimit überschritten um"
 
 #: assessment/showtest.php:3663 course/drillassess.php:236
-#: course/drillassess.php:267
+#: course/drillassess.php:267 assessment/libs/conversion.php:1235
 msgid "seconds"
 msgstr "Sekunden"
 
@@ -11195,7 +11195,7 @@ msgstr "Ausnahme löschen"
 msgid "no notification"
 msgstr "keine Benachrichtigung"
 
-#: course/exportcalfeed.php:36
+#: course/exportcalfeed.php:36 assessment/libs/conversion.php:1241
 msgid "days"
 msgstr "Tage"
 
@@ -11874,6 +11874,8 @@ msgid "Unlocked"
 msgstr "Entsperrt"
 
 #: course/gradebook.php:442 course/gradebook.php:449 course/gradebook.php:446
+#: assessment/libs/conversion.php:814 assessment/libs/conversion.php:822
+#: assessment/libs/conversion.php:829
 msgid "Width"
 msgstr "Breite"
 
@@ -18272,7 +18274,8 @@ msgstr "Wiederhole jeden"
 msgid "M"
 msgstr "Mo"
 
-#: course/managecalitems.php:97
+#: course/managecalitems.php:97 assessment/libs/conversion.php:259
+#: assessment/libs/conversion.php:1600
 msgid "T"
 msgstr "Di"
 
@@ -19718,6 +19721,7 @@ msgstr "Deka"
 #: assessment/libs/conversion.php:236 assessment/libs/conversion.php:251
 #: assessment/libs/conversion.php:409 assessment/libs/conversion.php:246
 #: assessment/libs/conversion.php:969 assessment/libs/conversion.php:984
+#: assessment/libs/conversion.php:311 assessment/libs/conversion.php:1190
 msgid "Gram"
 msgstr "Gramm"
 
@@ -19742,7 +19746,17 @@ msgstr "Gramm"
 #: assessment/libs/conversion.php:503 assessment/libs/conversion.php:504
 #: assessment/libs/conversion.php:971 assessment/libs/conversion.php:986
 #: assessment/libs/conversion.php:1227 assessment/libs/conversion.php:1235
-#: assessment/libs/conversion.php:1237
+#: assessment/libs/conversion.php:1237 assessment/libs/conversion.php:303
+#: assessment/libs/conversion.php:640 assessment/libs/conversion.php:641
+#: assessment/libs/conversion.php:642 assessment/libs/conversion.php:643
+#: assessment/libs/conversion.php:644 assessment/libs/conversion.php:645
+#: assessment/libs/conversion.php:655 assessment/libs/conversion.php:656
+#: assessment/libs/conversion.php:657 assessment/libs/conversion.php:658
+#: assessment/libs/conversion.php:659 assessment/libs/conversion.php:669
+#: assessment/libs/conversion.php:670 assessment/libs/conversion.php:671
+#: assessment/libs/conversion.php:672 assessment/libs/conversion.php:673
+#: assessment/libs/conversion.php:1192 assessment/libs/conversion.php:1522
+#: assessment/libs/conversion.php:1524
 msgid "Liter"
 msgstr "Liter"
 
@@ -19757,6 +19771,7 @@ msgstr "Liter"
 #: assessment/libs/conversion.php:402 assessment/libs/conversion.php:405
 #: assessment/libs/conversion.php:973 assessment/libs/conversion.php:988
 #: assessment/libs/conversion.php:1207 assessment/libs/conversion.php:1208
+#: assessment/libs/conversion.php:295 assessment/libs/conversion.php:1194
 msgid "Meter"
 msgstr "Meter"
 
@@ -19833,6 +19848,11 @@ msgstr "Meter"
 #: assessment/libs/conversion.php:1212 assessment/libs/conversion.php:1213
 #: assessment/libs/conversion.php:1214 assessment/libs/conversion.php:1215
 #: assessment/libs/conversion.php:1216 assessment/libs/conversion.php:1217
+#: assessment/libs/conversion.php:1054 assessment/libs/conversion.php:1055
+#: assessment/libs/conversion.php:1056 assessment/libs/conversion.php:1057
+#: assessment/libs/conversion.php:1058 assessment/libs/conversion.php:1059
+#: assessment/libs/conversion.php:1069 assessment/libs/conversion.php:1070
+#: assessment/libs/conversion.php:1081 assessment/libs/conversion.php:1082
 msgid "meter"
 msgstr "meter"
 
@@ -19869,6 +19889,10 @@ msgstr "liter"
 #: assessment/libs/conversion.php:1306 assessment/libs/conversion.php:1307
 #: assessment/libs/conversion.php:1314 assessment/libs/conversion.php:1315
 #: assessment/libs/conversion.php:1322 assessment/libs/conversion.php:1323
+#: assessment/libs/conversion.php:1615 assessment/libs/conversion.php:1616
+#: assessment/libs/conversion.php:1617 assessment/libs/conversion.php:1618
+#: assessment/libs/conversion.php:1619 assessment/libs/conversion.php:1620
+#: assessment/libs/conversion.php:1628 assessment/libs/conversion.php:1636
 msgid "gram"
 msgstr "gramm"
 
@@ -19895,6 +19919,7 @@ msgstr ""
 "Einstellungen."
 
 #: assessment/libs/conversion.php:1076 assessment/libs/conversion.php:1117
+#: assessment/libs/conversion.php:1336 assessment/libs/conversion.php:1377
 msgid "exponent"
 msgstr "Exponent"
 
@@ -20175,3 +20200,1072 @@ msgstr ""
 #: lti/admin/platforms.php:299
 msgid "Also enable the Org Unit Information."
 msgstr "Aktiviere auch die Information der Organisationseinheit."
+
+#: assessment/libs/conversion.php:246
+msgid "Inches"
+msgstr "Zoll"
+
+#: assessment/libs/conversion.php:246 assessment/libs/conversion.php:262
+#: assessment/libs/conversion.php:267 assessment/libs/conversion.php:275
+#: assessment/libs/conversion.php:279 assessment/libs/conversion.php:484
+#: assessment/libs/conversion.php:529 assessment/libs/conversion.php:1035
+#: assessment/libs/conversion.php:1037 assessment/libs/conversion.php:1063
+#: assessment/libs/conversion.php:1075 assessment/libs/conversion.php:1474
+#: assessment/libs/conversion.php:1520
+msgid "in"
+msgstr "in"
+
+#: assessment/libs/conversion.php:247
+msgid "Feet"
+msgstr "Fuß"
+
+#: assessment/libs/conversion.php:247 assessment/libs/conversion.php:263
+#: assessment/libs/conversion.php:268 assessment/libs/conversion.php:276
+#: assessment/libs/conversion.php:280 assessment/libs/conversion.php:484
+#: assessment/libs/conversion.php:485 assessment/libs/conversion.php:486
+#: assessment/libs/conversion.php:1035 assessment/libs/conversion.php:1036
+#: assessment/libs/conversion.php:1038 assessment/libs/conversion.php:1064
+#: assessment/libs/conversion.php:1076 assessment/libs/conversion.php:1474
+#: assessment/libs/conversion.php:1475
+msgid "ft"
+msgstr "ft"
+
+#: assessment/libs/conversion.php:248
+msgid "Yards"
+msgstr "Yards"
+
+#: assessment/libs/conversion.php:248 assessment/libs/conversion.php:264
+#: assessment/libs/conversion.php:269 assessment/libs/conversion.php:277
+#: assessment/libs/conversion.php:281 assessment/libs/conversion.php:485
+#: assessment/libs/conversion.php:541 assessment/libs/conversion.php:1036
+#: assessment/libs/conversion.php:1037 assessment/libs/conversion.php:1065
+#: assessment/libs/conversion.php:1077 assessment/libs/conversion.php:1475
+msgid "yd"
+msgstr "yd"
+
+#: assessment/libs/conversion.php:249
+msgid "Miles"
+msgstr "Meilen"
+
+#: assessment/libs/conversion.php:249 assessment/libs/conversion.php:265
+#: assessment/libs/conversion.php:270 assessment/libs/conversion.php:487
+#: assessment/libs/conversion.php:1038 assessment/libs/conversion.php:1066
+#: assessment/libs/conversion.php:1078
+msgid "mi"
+msgstr "mi"
+
+#: assessment/libs/conversion.php:251
+msgid "Fluid ounces"
+msgstr "Flüssigunze"
+
+#: assessment/libs/conversion.php:251 assessment/libs/conversion.php:621
+#: assessment/libs/conversion.php:649 assessment/libs/conversion.php:663
+msgid "fl oz"
+msgstr "fl oz"
+
+#: assessment/libs/conversion.php:252 assessment/libs/conversion.php:627
+msgid "Cups"
+msgstr "Tassen"
+
+#: assessment/libs/conversion.php:252 assessment/libs/conversion.php:367
+#: assessment/libs/conversion.php:621 assessment/libs/conversion.php:622
+#: assessment/libs/conversion.php:1233
+msgid "c"
+msgstr "c"
+
+#: assessment/libs/conversion.php:253
+msgid "Pints"
+msgstr "Pints"
+
+#: assessment/libs/conversion.php:253 assessment/libs/conversion.php:622
+#: assessment/libs/conversion.php:623 assessment/libs/conversion.php:651
+#: assessment/libs/conversion.php:665
+msgid "pt"
+msgstr "pt"
+
+#: assessment/libs/conversion.php:254
+msgid "Quarts"
+msgstr "Quarte"
+
+#: assessment/libs/conversion.php:254 assessment/libs/conversion.php:623
+#: assessment/libs/conversion.php:624 assessment/libs/conversion.php:652
+#: assessment/libs/conversion.php:666
+msgid "qt"
+msgstr "qt"
+
+#: assessment/libs/conversion.php:255
+msgid "Gallons"
+msgstr "Gallonen"
+
+#: assessment/libs/conversion.php:255 assessment/libs/conversion.php:624
+#: assessment/libs/conversion.php:653 assessment/libs/conversion.php:667
+#: assessment/libs/conversion.php:1131 assessment/libs/conversion.php:1132
+#: assessment/libs/conversion.php:1133 assessment/libs/conversion.php:1134
+#: assessment/libs/conversion.php:1135 assessment/libs/conversion.php:1136
+#: assessment/libs/conversion.php:1137 assessment/libs/conversion.php:1138
+msgid "gal"
+msgstr "gal"
+
+#: assessment/libs/conversion.php:257
+msgid "Ounces"
+msgstr "Unzen"
+
+#: assessment/libs/conversion.php:257 assessment/libs/conversion.php:1599
+#: assessment/libs/conversion.php:1625 assessment/libs/conversion.php:1633
+msgid "oz"
+msgstr "oz"
+
+#: assessment/libs/conversion.php:258
+msgid "Pounds"
+msgstr "Pfund"
+
+#: assessment/libs/conversion.php:258 assessment/libs/conversion.php:1600
+#: assessment/libs/conversion.php:1626 assessment/libs/conversion.php:1634
+msgid "lbs"
+msgstr "lbs"
+
+#: assessment/libs/conversion.php:259
+msgid "Tons"
+msgstr "Tonnen"
+
+#: assessment/libs/conversion.php:262
+msgid "Inches squared"
+msgstr "Quadratzoll"
+
+#: assessment/libs/conversion.php:263
+msgid "Feet squared"
+msgstr "Quadratfuß"
+
+#: assessment/libs/conversion.php:264 assessment/libs/conversion.php:544
+msgid "Yard squared"
+msgstr "Quadratyard"
+
+#: assessment/libs/conversion.php:265
+msgid "Mile squared"
+msgstr "Quadratmeile"
+
+#: assessment/libs/conversion.php:267
+msgid "Square inches"
+msgstr "Quadratzoll"
+
+#: assessment/libs/conversion.php:268
+msgid "Square feet"
+msgstr "Quadratfuß"
+
+#: assessment/libs/conversion.php:269 assessment/libs/conversion.php:547
+msgid "Square yard"
+msgstr "Quadratyard"
+
+#: assessment/libs/conversion.php:270
+msgid "Square mile"
+msgstr "Quadratmeile"
+
+#: assessment/libs/conversion.php:275 assessment/libs/conversion.php:1522
+msgid "Inches cubed"
+msgstr "Kubikzoll"
+
+#: assessment/libs/conversion.php:276
+msgid "Feet cubed"
+msgstr "Kubikfuß"
+
+#: assessment/libs/conversion.php:277
+msgid "Yard cubed"
+msgstr "Kubikyard"
+
+#: assessment/libs/conversion.php:279 assessment/libs/conversion.php:1524
+msgid "Cubic inches"
+msgstr "Kubikzoll"
+
+#: assessment/libs/conversion.php:280
+msgid "Cubic feet"
+msgstr "Kubikfuß"
+
+#: assessment/libs/conversion.php:281
+msgid "Cubic yard"
+msgstr "Kibukyard"
+
+#: assessment/libs/conversion.php:292
+msgid "Millimeter"
+msgstr "Millimeter"
+
+#: assessment/libs/conversion.php:292 assessment/libs/conversion.php:318
+#: assessment/libs/conversion.php:326 assessment/libs/conversion.php:338
+#: assessment/libs/conversion.php:346 assessment/libs/conversion.php:503
+#: assessment/libs/conversion.php:1052 assessment/libs/conversion.php:1490
+msgid "mm"
+msgstr "mm"
+
+#: assessment/libs/conversion.php:293
+msgid "Centimeter"
+msgstr "Zentimeter"
+
+#: assessment/libs/conversion.php:293 assessment/libs/conversion.php:319
+#: assessment/libs/conversion.php:327 assessment/libs/conversion.php:339
+#: assessment/libs/conversion.php:347 assessment/libs/conversion.php:502
+#: assessment/libs/conversion.php:503 assessment/libs/conversion.php:529
+#: assessment/libs/conversion.php:1051 assessment/libs/conversion.php:1063
+#: assessment/libs/conversion.php:1075 assessment/libs/conversion.php:1489
+#: assessment/libs/conversion.php:1490
+msgid "cm"
+msgstr "cm"
+
+#: assessment/libs/conversion.php:294
+msgid "Decimeter"
+msgstr "Dezimeter"
+
+#: assessment/libs/conversion.php:294 assessment/libs/conversion.php:320
+#: assessment/libs/conversion.php:328 assessment/libs/conversion.php:340
+#: assessment/libs/conversion.php:348 assessment/libs/conversion.php:501
+#: assessment/libs/conversion.php:502 assessment/libs/conversion.php:1050
+#: assessment/libs/conversion.php:1488 assessment/libs/conversion.php:1489
+msgid "dm"
+msgstr "dm"
+
+#: assessment/libs/conversion.php:295 assessment/libs/conversion.php:321
+#: assessment/libs/conversion.php:329 assessment/libs/conversion.php:341
+#: assessment/libs/conversion.php:349 assessment/libs/conversion.php:500
+#: assessment/libs/conversion.php:501 assessment/libs/conversion.php:504
+#: assessment/libs/conversion.php:541 assessment/libs/conversion.php:1047
+#: assessment/libs/conversion.php:1048 assessment/libs/conversion.php:1050
+#: assessment/libs/conversion.php:1051 assessment/libs/conversion.php:1052
+#: assessment/libs/conversion.php:1064 assessment/libs/conversion.php:1065
+#: assessment/libs/conversion.php:1076 assessment/libs/conversion.php:1077
+#: assessment/libs/conversion.php:1487 assessment/libs/conversion.php:1488
+msgid "m"
+msgstr "m"
+
+#: assessment/libs/conversion.php:296
+msgid "Dekameter"
+msgstr "Dekameter"
+
+#: assessment/libs/conversion.php:296 assessment/libs/conversion.php:322
+#: assessment/libs/conversion.php:330 assessment/libs/conversion.php:342
+#: assessment/libs/conversion.php:350 assessment/libs/conversion.php:499
+#: assessment/libs/conversion.php:500 assessment/libs/conversion.php:1049
+#: assessment/libs/conversion.php:1486 assessment/libs/conversion.php:1487
+msgid "dam"
+msgstr "dam"
+
+#: assessment/libs/conversion.php:297
+msgid "Hectometer"
+msgstr "Hektometer"
+
+#: assessment/libs/conversion.php:297 assessment/libs/conversion.php:323
+#: assessment/libs/conversion.php:331 assessment/libs/conversion.php:343
+#: assessment/libs/conversion.php:351 assessment/libs/conversion.php:498
+#: assessment/libs/conversion.php:499 assessment/libs/conversion.php:1048
+#: assessment/libs/conversion.php:1485 assessment/libs/conversion.php:1486
+msgid "hm"
+msgstr "hm"
+
+#: assessment/libs/conversion.php:298
+msgid "Kilometer"
+msgstr "Kilometer"
+
+#: assessment/libs/conversion.php:298 assessment/libs/conversion.php:324
+#: assessment/libs/conversion.php:332 assessment/libs/conversion.php:344
+#: assessment/libs/conversion.php:352 assessment/libs/conversion.php:498
+#: assessment/libs/conversion.php:1047 assessment/libs/conversion.php:1066
+#: assessment/libs/conversion.php:1078 assessment/libs/conversion.php:1485
+msgid "km"
+msgstr "km"
+
+#: assessment/libs/conversion.php:300 assessment/libs/conversion.php:1512
+#: assessment/libs/conversion.php:1514
+msgid "Milliliter"
+msgstr "Milliliter"
+
+#: assessment/libs/conversion.php:300 assessment/libs/conversion.php:638
+msgid "mL"
+msgstr "ml"
+
+#: assessment/libs/conversion.php:301
+msgid "Centiliter"
+msgstr "Zentiliter"
+
+#: assessment/libs/conversion.php:301 assessment/libs/conversion.php:637
+msgid "cL"
+msgstr "cl"
+
+#: assessment/libs/conversion.php:302
+msgid "Deciliter"
+msgstr "Deziliter"
+
+#: assessment/libs/conversion.php:302 assessment/libs/conversion.php:636
+msgid "dL"
+msgstr "dl"
+
+#: assessment/libs/conversion.php:303 assessment/libs/conversion.php:633
+#: assessment/libs/conversion.php:634 assessment/libs/conversion.php:635
+#: assessment/libs/conversion.php:636 assessment/libs/conversion.php:637
+#: assessment/libs/conversion.php:638 assessment/libs/conversion.php:649
+#: assessment/libs/conversion.php:650 assessment/libs/conversion.php:651
+#: assessment/libs/conversion.php:652 assessment/libs/conversion.php:653
+#: assessment/libs/conversion.php:663 assessment/libs/conversion.php:664
+#: assessment/libs/conversion.php:665 assessment/libs/conversion.php:666
+#: assessment/libs/conversion.php:667 assessment/libs/conversion.php:1520
+msgid "L"
+msgstr "l"
+
+#: assessment/libs/conversion.php:304
+msgid "Dekaliter"
+msgstr "Dekaliter"
+
+#: assessment/libs/conversion.php:304 assessment/libs/conversion.php:635
+msgid "daL"
+msgstr "dal"
+
+#: assessment/libs/conversion.php:305
+msgid "Hectoliter"
+msgstr "Hektoliter"
+
+#: assessment/libs/conversion.php:305 assessment/libs/conversion.php:634
+msgid "hL"
+msgstr "hl"
+
+#: assessment/libs/conversion.php:306
+msgid "Kiloliter"
+msgstr "Kiloliter"
+
+#: assessment/libs/conversion.php:306 assessment/libs/conversion.php:633
+msgid "kL"
+msgstr "kl"
+
+#: assessment/libs/conversion.php:308
+msgid "Milligram"
+msgstr "Milligramm"
+
+#: assessment/libs/conversion.php:308 assessment/libs/conversion.php:1612
+msgid "mg"
+msgstr "mg"
+
+#: assessment/libs/conversion.php:309
+msgid "Centigram"
+msgstr "Zentigramm"
+
+#: assessment/libs/conversion.php:309 assessment/libs/conversion.php:1611
+msgid "cg"
+msgstr "cg"
+
+#: assessment/libs/conversion.php:310
+msgid "Decigram"
+msgstr "Dezigramm"
+
+#: assessment/libs/conversion.php:310 assessment/libs/conversion.php:1610
+msgid "dg"
+msgstr "dg"
+
+#: assessment/libs/conversion.php:311 assessment/libs/conversion.php:1607
+#: assessment/libs/conversion.php:1608 assessment/libs/conversion.php:1609
+#: assessment/libs/conversion.php:1610 assessment/libs/conversion.php:1611
+#: assessment/libs/conversion.php:1612 assessment/libs/conversion.php:1625
+#: assessment/libs/conversion.php:1633
+msgid "g"
+msgstr "g"
+
+#: assessment/libs/conversion.php:312
+msgid "Dekagram"
+msgstr "Dekagramm"
+
+#: assessment/libs/conversion.php:312 assessment/libs/conversion.php:1609
+msgid "dag"
+msgstr "dag"
+
+#: assessment/libs/conversion.php:313
+msgid "Hectogram"
+msgstr "Hektogramm"
+
+#: assessment/libs/conversion.php:313 assessment/libs/conversion.php:1608
+msgid "hg"
+msgstr "hg"
+
+#: assessment/libs/conversion.php:314
+msgid "Kilogram"
+msgstr "Kilogramm"
+
+#: assessment/libs/conversion.php:314 assessment/libs/conversion.php:1607
+#: assessment/libs/conversion.php:1613 assessment/libs/conversion.php:1626
+#: assessment/libs/conversion.php:1634
+msgid "kg"
+msgstr "kg"
+
+#: assessment/libs/conversion.php:315 assessment/libs/conversion.php:1621
+msgid "Metric Ton"
+msgstr "Metrische Tonne"
+
+#: assessment/libs/conversion.php:315 assessment/libs/conversion.php:1613
+msgid "Tonne"
+msgstr "Tonne"
+
+#: assessment/libs/conversion.php:318 assessment/libs/conversion.php:512
+msgid "Millimeter squared"
+msgstr "Quadratmillimeter"
+
+#: assessment/libs/conversion.php:319 assessment/libs/conversion.php:511
+#: assessment/libs/conversion.php:512 assessment/libs/conversion.php:531
+msgid "Centimeter squared"
+msgstr "Quadratzentimeter"
+
+#: assessment/libs/conversion.php:320 assessment/libs/conversion.php:510
+#: assessment/libs/conversion.php:511
+msgid "Decimeter squared"
+msgstr "Quadratdezimeter"
+
+#: assessment/libs/conversion.php:321 assessment/libs/conversion.php:509
+#: assessment/libs/conversion.php:510 assessment/libs/conversion.php:513
+msgid "Meter squared"
+msgstr "Quadratmeter"
+
+#: assessment/libs/conversion.php:322 assessment/libs/conversion.php:508
+#: assessment/libs/conversion.php:509
+msgid "Dekameter squared"
+msgstr "Quadratdekameter"
+
+#: assessment/libs/conversion.php:323 assessment/libs/conversion.php:507
+#: assessment/libs/conversion.php:508
+msgid "Hectometer squared"
+msgstr "Quadrathektometer"
+
+#: assessment/libs/conversion.php:324 assessment/libs/conversion.php:507
+msgid "Kilometer squared"
+msgstr "Quadratkilometer"
+
+#: assessment/libs/conversion.php:326 assessment/libs/conversion.php:521
+msgid "Square millimeter"
+msgstr "Quadratmillimeter"
+
+#: assessment/libs/conversion.php:327 assessment/libs/conversion.php:520
+#: assessment/libs/conversion.php:521 assessment/libs/conversion.php:533
+msgid "Square centimeter"
+msgstr "Quadratzentimeter"
+
+#: assessment/libs/conversion.php:328 assessment/libs/conversion.php:519
+#: assessment/libs/conversion.php:520
+msgid "Square decimeter"
+msgstr "Quadratdezimeter"
+
+#: assessment/libs/conversion.php:329 assessment/libs/conversion.php:518
+#: assessment/libs/conversion.php:519 assessment/libs/conversion.php:522
+#: assessment/libs/conversion.php:547
+msgid "Square meter"
+msgstr "Quadratmeter"
+
+#: assessment/libs/conversion.php:330 assessment/libs/conversion.php:517
+#: assessment/libs/conversion.php:518
+msgid "Square dekameter"
+msgstr "Quadratdekameter"
+
+#: assessment/libs/conversion.php:331 assessment/libs/conversion.php:516
+#: assessment/libs/conversion.php:517
+msgid "Square hectometer"
+msgstr "Quadrathektometer"
+
+#: assessment/libs/conversion.php:332 assessment/libs/conversion.php:516
+msgid "Square kilometer"
+msgstr "Quadratkilometer"
+
+#: assessment/libs/conversion.php:334 assessment/libs/conversion.php:513
+#: assessment/libs/conversion.php:514 assessment/libs/conversion.php:522
+#: assessment/libs/conversion.php:523
+msgid "Ares"
+msgstr "Ar"
+
+#: assessment/libs/conversion.php:334 assessment/libs/conversion.php:496
+msgid "a"
+msgstr "a"
+
+#: assessment/libs/conversion.php:335 assessment/libs/conversion.php:514
+#: assessment/libs/conversion.php:523
+msgid "Hectares"
+msgstr "Hektar"
+
+#: assessment/libs/conversion.php:335 assessment/libs/conversion.php:497
+#: assessment/libs/conversion.php:542
+msgid "ha"
+msgstr "ha"
+
+#: assessment/libs/conversion.php:338 assessment/libs/conversion.php:1497
+msgid "Millimeter cubed"
+msgstr "Kubikmillimeter"
+
+#: assessment/libs/conversion.php:339 assessment/libs/conversion.php:1496
+#: assessment/libs/conversion.php:1497
+msgid "Centimeter cubed"
+msgstr "Kubikzentimeter"
+
+#: assessment/libs/conversion.php:340 assessment/libs/conversion.php:1495
+#: assessment/libs/conversion.php:1496
+msgid "Decimeter cubed"
+msgstr "Kubikdezimeter"
+
+#: assessment/libs/conversion.php:341 assessment/libs/conversion.php:1494
+#: assessment/libs/conversion.php:1495
+msgid "Meter cubed"
+msgstr "Kubikmeter"
+
+#: assessment/libs/conversion.php:342 assessment/libs/conversion.php:1493
+#: assessment/libs/conversion.php:1494
+msgid "Dekameter cubed"
+msgstr "Kubikdekameter"
+
+#: assessment/libs/conversion.php:343 assessment/libs/conversion.php:1492
+#: assessment/libs/conversion.php:1493
+msgid "Hectometer cubed"
+msgstr "Kubikhektometer"
+
+#: assessment/libs/conversion.php:344 assessment/libs/conversion.php:1492
+msgid "Kilometer cubed"
+msgstr "Kubikkilometer"
+
+#: assessment/libs/conversion.php:346 assessment/libs/conversion.php:1504
+msgid "Cubic millimeter"
+msgstr "Kubikmillimeter"
+
+#: assessment/libs/conversion.php:347 assessment/libs/conversion.php:1503
+#: assessment/libs/conversion.php:1504
+msgid "Cubic centimeter"
+msgstr "Kubikzentimeter"
+
+#: assessment/libs/conversion.php:348 assessment/libs/conversion.php:1502
+#: assessment/libs/conversion.php:1503
+msgid "Cubic decimeter"
+msgstr "Kubikdezimeter"
+
+#: assessment/libs/conversion.php:349 assessment/libs/conversion.php:1501
+#: assessment/libs/conversion.php:1502
+msgid "Cubic meter"
+msgstr "Kubikmeter"
+
+#: assessment/libs/conversion.php:350 assessment/libs/conversion.php:1500
+#: assessment/libs/conversion.php:1501
+msgid "Cubic dekameter"
+msgstr "Kubikdekameter"
+
+#: assessment/libs/conversion.php:351 assessment/libs/conversion.php:1499
+#: assessment/libs/conversion.php:1500
+msgid "Cubic hectometer"
+msgstr "Kubikhektometer"
+
+#: assessment/libs/conversion.php:352 assessment/libs/conversion.php:1499
+msgid "Cubic kilometer"
+msgstr "Kubikkilometer"
+
+#: assessment/libs/conversion.php:361
+msgid "Seconds"
+msgstr "Sekunden"
+
+#: assessment/libs/conversion.php:361 assessment/libs/conversion.php:1228
+msgid "sec"
+msgstr "s"
+
+#: assessment/libs/conversion.php:362
+msgid "Minutes"
+msgstr "Minuten"
+
+#: assessment/libs/conversion.php:362 assessment/libs/conversion.php:1227
+msgid "min"
+msgstr "min"
+
+#: assessment/libs/conversion.php:363
+msgid "Hours"
+msgstr "Stunden"
+
+#: assessment/libs/conversion.php:363 assessment/libs/conversion.php:1229
+msgid "hr"
+msgstr "h"
+
+#: assessment/libs/conversion.php:364
+msgid "Days"
+msgstr "Tage"
+
+#: assessment/libs/conversion.php:364 assessment/libs/conversion.php:1230
+msgid "d"
+msgstr "d"
+
+#: assessment/libs/conversion.php:365
+msgid "Years"
+msgstr "Jahre"
+
+#: assessment/libs/conversion.php:365 assessment/libs/conversion.php:1231
+msgid "yr"
+msgstr "a"
+
+#: assessment/libs/conversion.php:366
+msgid "Decade"
+msgstr "Dekade"
+
+#: assessment/libs/conversion.php:366 assessment/libs/conversion.php:1232
+msgid "dec"
+msgstr "Dekade"
+
+#: assessment/libs/conversion.php:367
+msgid "Centuries"
+msgstr "Jahrhunderte"
+
+#: assessment/libs/conversion.php:407
+msgid " is not a valid type."
+msgstr "ist kein gültiger Typ."
+
+#: assessment/libs/conversion.php:411
+msgid " is not a valid type. The system type is Casks."
+msgstr " ist kein gültiger Typ. Der im System verwendete Typ ist Fass."
+
+#: assessment/libs/conversion.php:415
+msgid ""
+" is not a valid type. The system type is A (American), M (Metric), or T "
+"(Time)."
+msgstr ""
+" ist kein gültiger Typ. das System verwendet die Typen A (Amerikanisch), M "
+"(Metrisch) und T (Zeit)."
+
+#: assessment/libs/conversion.php:442 assessment/libs/conversion.php:583
+#: assessment/libs/conversion.php:997 assessment/libs/conversion.php:1111
+#: assessment/libs/conversion.php:1434
+msgid "Nothing to display - no system type supplied."
+msgstr "Nichts anzuzeigen - kein Systemtyp angegeben."
+
+#: assessment/libs/conversion.php:481
+msgid "acre"
+msgstr "Acre"
+
+#: assessment/libs/conversion.php:489 assessment/libs/conversion.php:490
+#: assessment/libs/conversion.php:491
+msgid "feet squared"
+msgstr "Quadratfuß"
+
+#: assessment/libs/conversion.php:489
+msgid "inches squared"
+msgstr "Quadratzoll"
+
+#: assessment/libs/conversion.php:490
+msgid "yard squared"
+msgstr "Quadratyard"
+
+#: assessment/libs/conversion.php:492
+msgid "mile squared"
+msgstr "Quadratmeile"
+
+#: assessment/libs/conversion.php:531
+msgid "Inch squared"
+msgstr "Quadratzoll"
+
+#: assessment/libs/conversion.php:533
+msgid "Square inch"
+msgstr "Quadratzoll"
+
+#: assessment/libs/conversion.php:542 assessment/libs/conversion.php:545
+#: assessment/libs/conversion.php:548
+msgid "acres"
+msgstr "Acres"
+
+#: assessment/libs/conversion.php:544
+msgid "Meters squared"
+msgstr "Quadratmeter"
+
+#: assessment/libs/conversion.php:545 assessment/libs/conversion.php:548
+msgid "hectares"
+msgstr "Hektar"
+
+#: assessment/libs/conversion.php:626 assessment/libs/conversion.php:670
+msgid "Cup"
+msgstr "Cup"
+
+#: assessment/libs/conversion.php:626 assessment/libs/conversion.php:655
+#: assessment/libs/conversion.php:669
+msgid "fluid ounces"
+msgstr "Flüssigunze"
+
+#: assessment/libs/conversion.php:627 assessment/libs/conversion.php:628
+#: assessment/libs/conversion.php:657 assessment/libs/conversion.php:671
+msgid "pint"
+msgstr "Pinte"
+
+#: assessment/libs/conversion.php:628 assessment/libs/conversion.php:629
+#: assessment/libs/conversion.php:658 assessment/libs/conversion.php:672
+msgid "quart"
+msgstr "Quart"
+
+#: assessment/libs/conversion.php:629 assessment/libs/conversion.php:659
+#: assessment/libs/conversion.php:673
+msgid "gallon"
+msgstr "Gallone"
+
+#: assessment/libs/conversion.php:640
+msgid "kiloliter"
+msgstr "Kiloliter"
+
+#: assessment/libs/conversion.php:641
+msgid "hectoliter"
+msgstr "Hektoliter"
+
+#: assessment/libs/conversion.php:642
+msgid "dekaliter"
+msgstr "Dekaliter"
+
+#: assessment/libs/conversion.php:643
+msgid "deciliter"
+msgstr "Deziliter"
+
+#: assessment/libs/conversion.php:644
+msgid "centiliter"
+msgstr "Zentiliter"
+
+#: assessment/libs/conversion.php:645
+msgid "milliliter"
+msgstr "Milliliter"
+
+#: assessment/libs/conversion.php:650 assessment/libs/conversion.php:664
+msgid "C"
+msgstr "C"
+
+#: assessment/libs/conversion.php:656
+msgid "cup"
+msgstr "Cup"
+
+#: assessment/libs/conversion.php:806
+msgid "Circumference"
+msgstr "Umfang"
+
+#: assessment/libs/conversion.php:807 assessment/libs/conversion.php:812
+#: assessment/libs/conversion.php:817 assessment/libs/conversion.php:835
+msgid "Area"
+msgstr "Fläche"
+
+#: assessment/libs/conversion.php:808 assessment/libs/conversion.php:825
+#: assessment/libs/conversion.php:832
+msgid "Radius"
+msgstr "Radius"
+
+#: assessment/libs/conversion.php:809
+msgid "Diameter"
+msgstr "Durchmesser"
+
+#: assessment/libs/conversion.php:811 assessment/libs/conversion.php:816
+#: assessment/libs/conversion.php:834
+msgid "Perimeter"
+msgstr "Durchmesser"
+
+#: assessment/libs/conversion.php:813 assessment/libs/conversion.php:821
+#: assessment/libs/conversion.php:828
+msgid "Length"
+msgstr "Länge"
+
+#: assessment/libs/conversion.php:818
+msgid "side"
+msgstr "Seite"
+
+#: assessment/libs/conversion.php:820
+msgid "Surface Area"
+msgstr "Oberfläche"
+
+#: assessment/libs/conversion.php:823 assessment/libs/conversion.php:830
+#: assessment/libs/conversion.php:837
+msgid "Height"
+msgstr "Höhe"
+
+#: assessment/libs/conversion.php:824 assessment/libs/conversion.php:831
+msgid "Side"
+msgstr "Seite"
+
+#: assessment/libs/conversion.php:827
+msgid "Volume"
+msgstr "Volumen"
+
+#: assessment/libs/conversion.php:836
+msgid "base"
+msgstr "Basis"
+
+#: assessment/libs/conversion.php:839
+msgid "Celsius"
+msgstr "Celsius"
+
+#: assessment/libs/conversion.php:840
+msgid "Fahrenheit"
+msgstr "Fahrenheit"
+
+#: assessment/libs/conversion.php:841
+msgid "Kelvin"
+msgstr "Kelvin"
+
+#: assessment/libs/conversion.php:898
+msgid "add all sides"
+msgstr "addiere alle Seiten"
+
+#: assessment/libs/conversion.php:907
+msgid "(Surface Area of a Rectangular Solid)"
+msgstr "(Oberfläche eines Quaders)"
+
+#: assessment/libs/conversion.php:908
+msgid "(Surface Area of a Cube)"
+msgstr "(Oberfläche eines Würfels)"
+
+#: assessment/libs/conversion.php:909
+msgid "(Surface Area of a Sphere)"
+msgstr "(Oberfläche einer Kugel)"
+
+#: assessment/libs/conversion.php:910
+msgid "(Surface Area of a Right Circular Cylinder)"
+msgstr "(Oberfläche eines geraden Zylinders)"
+
+#: assessment/libs/conversion.php:912
+msgid "(Volume of a Rectangular Solid)"
+msgstr "(Volumen eines Quaders)"
+
+#: assessment/libs/conversion.php:913
+msgid "(Volume of a Cube)"
+msgstr "(Volumen eines Würfels)"
+
+#: assessment/libs/conversion.php:914
+msgid "(Volume of a Sphere)"
+msgstr "(Volumen einer Kugel)"
+
+#: assessment/libs/conversion.php:915
+msgid "(Volume of a Right Circular Cylinder)"
+msgstr "(Volumen eines Zylinders)"
+
+#: assessment/libs/conversion.php:1040 assessment/libs/conversion.php:1069
+msgid "foot"
+msgstr "Fuß"
+
+#: assessment/libs/conversion.php:1040 assessment/libs/conversion.php:1042
+msgid "inches"
+msgstr "Zoll"
+
+#: assessment/libs/conversion.php:1041 assessment/libs/conversion.php:1042
+#: assessment/libs/conversion.php:1070 assessment/libs/conversion.php:1082
+msgid "yard"
+msgstr "Yard"
+
+#: assessment/libs/conversion.php:1041 assessment/libs/conversion.php:1043
+#: assessment/libs/conversion.php:1081
+msgid "feet"
+msgstr "Fuß"
+
+#: assessment/libs/conversion.php:1043 assessment/libs/conversion.php:1071
+#: assessment/libs/conversion.php:1083
+msgid "mile"
+msgstr "Meile"
+
+#: assessment/libs/conversion.php:1054 assessment/libs/conversion.php:1071
+#: assessment/libs/conversion.php:1083
+msgid "kilometer"
+msgstr "Kilometer"
+
+#: assessment/libs/conversion.php:1055
+msgid "hectometer"
+msgstr "Hektometer"
+
+#: assessment/libs/conversion.php:1056
+msgid "dekameter"
+msgstr "Dekameter"
+
+#: assessment/libs/conversion.php:1057
+msgid "decimeter"
+msgstr "Dezimeter"
+
+#: assessment/libs/conversion.php:1058 assessment/libs/conversion.php:1068
+#: assessment/libs/conversion.php:1080
+msgid "centimeter"
+msgstr "Zentimeter"
+
+#: assessment/libs/conversion.php:1059
+msgid "millimeter"
+msgstr "Millimeter"
+
+#: assessment/libs/conversion.php:1068 assessment/libs/conversion.php:1080
+msgid "inch"
+msgstr "Zoll"
+
+#: assessment/libs/conversion.php:1131 assessment/libs/conversion.php:1140
+msgid "US Barrel"
+msgstr "US Barrel"
+
+#: assessment/libs/conversion.php:1132 assessment/libs/conversion.php:1141
+msgid "British Barrel"
+msgstr "British Barrel"
+
+#: assessment/libs/conversion.php:1133 assessment/libs/conversion.php:1142
+msgid "Hogshead"
+msgstr "Hogshead"
+
+#: assessment/libs/conversion.php:1134 assessment/libs/conversion.php:1143
+msgid "Barrique"
+msgstr "Barrique"
+
+#: assessment/libs/conversion.php:1135 assessment/libs/conversion.php:1144
+msgid "Puncheon"
+msgstr "Puncheon"
+
+#: assessment/libs/conversion.php:1136 assessment/libs/conversion.php:1145
+msgid "Butt"
+msgstr "Butt"
+
+#: assessment/libs/conversion.php:1137 assessment/libs/conversion.php:1146
+msgid "Pipe"
+msgstr "Pipe"
+
+#: assessment/libs/conversion.php:1138 assessment/libs/conversion.php:1147
+msgid "Tun"
+msgstr "Tun"
+
+#: assessment/libs/conversion.php:1140 assessment/libs/conversion.php:1141
+#: assessment/libs/conversion.php:1142 assessment/libs/conversion.php:1143
+#: assessment/libs/conversion.php:1144 assessment/libs/conversion.php:1145
+#: assessment/libs/conversion.php:1146 assessment/libs/conversion.php:1147
+msgid "gallons"
+msgstr "Gallonen"
+
+#: assessment/libs/conversion.php:1186
+msgid "Kilo"
+msgstr "Kilo"
+
+#: assessment/libs/conversion.php:1187
+msgid "Hecto"
+msgstr "Hekto"
+
+#: assessment/libs/conversion.php:1188 assessment/libs/conversion.php:1203
+msgid "Deka"
+msgstr "Deka"
+
+#: assessment/libs/conversion.php:1197
+msgid "Deci"
+msgstr "Dezi"
+
+#: assessment/libs/conversion.php:1198
+msgid "Centi"
+msgstr "Zenti"
+
+#: assessment/libs/conversion.php:1199
+msgid "Milli"
+msgstr "Milli"
+
+#: assessment/libs/conversion.php:1201
+msgid "Kilo (k)"
+msgstr "Kilo (k)"
+
+#: assessment/libs/conversion.php:1202
+msgid "Hecto (h)"
+msgstr "Hekto (h)"
+
+#: assessment/libs/conversion.php:1205
+msgid "Gram (g)"
+msgstr "Gramm (g)"
+
+#: assessment/libs/conversion.php:1207
+msgid "Liter (L)"
+msgstr "Liter (l)"
+
+#: assessment/libs/conversion.php:1209
+msgid "Meter (m)"
+msgstr "Meter (m)"
+
+#: assessment/libs/conversion.php:1212
+msgid "Deci (d)"
+msgstr "Dezi (d)"
+
+#: assessment/libs/conversion.php:1213
+msgid "Centi (c)"
+msgstr "Zenti (c)"
+
+#: assessment/libs/conversion.php:1214
+msgid "Milli (m)"
+msgstr "Milli (m)"
+
+#: assessment/libs/conversion.php:1240
+msgid "day"
+msgstr "Tag"
+
+#: assessment/libs/conversion.php:1242
+msgid "year"
+msgstr "Jahr"
+
+#: assessment/libs/conversion.php:1243
+msgid "years"
+msgstr "Jahre"
+
+#: assessment/libs/conversion.php:1244
+msgid "decade"
+msgstr "Dekade"
+
+#: assessment/libs/conversion.php:1245
+msgid "century"
+msgstr "Jahrhundert"
+
+#: assessment/libs/conversion.php:1477 assessment/libs/conversion.php:1478
+msgid "feet cubed"
+msgstr "Kubikfuß"
+
+#: assessment/libs/conversion.php:1477
+msgid "inches cubed"
+msgstr "Kubikzoll"
+
+#: assessment/libs/conversion.php:1478
+msgid "yard cubed"
+msgstr "Kubikyard"
+
+#: assessment/libs/conversion.php:1480 assessment/libs/conversion.php:1481
+msgid "cubic feet"
+msgstr "Kubikfuß"
+
+#: assessment/libs/conversion.php:1480
+msgid "cubic inches"
+msgstr "Kubikzoll"
+
+#: assessment/libs/conversion.php:1481
+msgid "cubic yard"
+msgstr "Kubikyard"
+
+#: assessment/libs/conversion.php:1512
+msgid "Inch cubed"
+msgstr "Kubikzoll"
+
+#: assessment/libs/conversion.php:1514
+msgid "Cubic inch"
+msgstr "Kubikzoll"
+
+#: assessment/libs/conversion.php:1599
+msgid "lb"
+msgstr "lb"
+
+#: assessment/libs/conversion.php:1602 assessment/libs/conversion.php:1629
+#: assessment/libs/conversion.php:1637
+msgid "pound"
+msgstr "Pfund"
+
+#: assessment/libs/conversion.php:1602 assessment/libs/conversion.php:1628
+#: assessment/libs/conversion.php:1636
+msgid "ounces"
+msgstr "Unzen"
+
+#: assessment/libs/conversion.php:1603
+msgid "Ton"
+msgstr "Tonne"
+
+#: assessment/libs/conversion.php:1603
+msgid "pounds"
+msgstr "Pfund"
+
+#: assessment/libs/conversion.php:1615 assessment/libs/conversion.php:1621
+#: assessment/libs/conversion.php:1629 assessment/libs/conversion.php:1637
+msgid "kilogram"
+msgstr "Kilogramm"
+
+#: assessment/libs/conversion.php:1616
+msgid "hectogram"
+msgstr "Hektogramm"
+
+#: assessment/libs/conversion.php:1617
+msgid "dekagram"
+msgstr "Dekagramm"
+
+#: assessment/libs/conversion.php:1618
+msgid "decigram"
+msgstr "Dezigramm"
+
+#: assessment/libs/conversion.php:1619
+msgid "centigram"
+msgstr "Zentigramm"
+
+#: assessment/libs/conversion.php:1620
+msgid "milligram"
+msgstr "Milligramm"
