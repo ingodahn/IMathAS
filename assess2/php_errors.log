@@ -1,3 +1,7 @@
 [12-Jan-2026 18:39:49 Europe/Berlin] Caught error by QuestionGenerator in /var/www/html/IMathAS/assess2/questions/QuestionHtmlGenerator.php(265) : eval()'d code in QSID 38:1 -- Use of undefined constant error - assumed 'error' (this will throw an Error in a future version of PHP)
 [15-Jul-2026 13:04:15 Europe/Berlin] PHP Notice:  Undefined index: useed in /var/www/html/IMathAS/header.php on line 98
 [15-Jul-2026 13:04:15 Europe/Berlin] PHP Notice:  Undefined index: useed in /var/www/html/IMathAS/header.php on line 151
+[18-Jul-2026 18:34:57 Europe/Berlin] PHP Notice:  Undefined index: useed in /var/www/html/IMathAS/header.php on line 98
+[18-Jul-2026 18:34:57 Europe/Berlin] PHP Notice:  Undefined index: useed in /var/www/html/IMathAS/header.php on line 151
+[18-Jul-2026 18:38:25 Europe/Berlin] PHP Notice:  Undefined index: useed in /var/www/html/IMathAS/header.php on line 98
+[18-Jul-2026 18:38:25 Europe/Berlin] PHP Notice:  Undefined index: useed in /var/www/html/IMathAS/header.php on line 151
